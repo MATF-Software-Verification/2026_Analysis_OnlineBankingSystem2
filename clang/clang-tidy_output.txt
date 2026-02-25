@@ -1,0 +1,1705 @@
+=== Započinjem Clang-Tidy analizu ===
+---------------------------------------------------
+Analiziram fajl: ../OnlineBankingSystem/controller.cpp
+25781 warnings generated.
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:32:22: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   32 |     rajdeep.drawLine(100);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:33:55: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   33 |     std::cout<<"\t\tBMS - Banking Management System"<<std::endl;
+      |                                                       ^~~~~~~~~
+      |                                                       '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:34:22: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   34 |     rajdeep.drawLine(100);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:38:9: warning: variable name 'ch' is too short, expected at least 3 characters [readability-identifier-length]
+   38 |     int ch;
+      |         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:39:37: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   39 |     std::cout<<"1. Customer Login"<<std::endl;
+      |                                     ^~~~~~~~~
+      |                                     '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:40:37: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   40 |     std::cout<<"2. Employee Login"<<std::endl;
+      |                                     ^~~~~~~~~
+      |                                     '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:41:49: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   41 |     std::cout<<"3. Admin (id: raj, pass: raj)"<<std::endl;
+      |                                                 ^~~~~~~~~
+      |                                                 '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:42:30: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   42 |     std::cout<<"4. Credits"<<std::endl;
+      |                              ^~~~~~~~~
+      |                              '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:43:30: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   43 |     std::cout<<"5. License"<<std::endl;
+      |                              ^~~~~~~~~
+      |                              '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:44:27: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   44 |     std::cout<<"6. Exit"<<std::endl;
+      |                           ^~~~~~~~~
+      |                           '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:46:16: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   46 |     std::cout<<std::endl<<std::endl;
+      |                ^~~~~~~~~
+      |                '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:46:27: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   46 |     std::cout<<std::endl<<std::endl;
+      |                           ^~~~~~~~~
+      |                           '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:59:13: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+   59 |             std::string id,pass;
+      |             ^~~~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:59:25: warning: variable name 'id' is too short, expected at least 3 characters [readability-identifier-length]
+   59 |             std::string id,pass;
+      |                         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:64:41: warning: statement should be inside braces [readability-braces-around-statements]
+   64 |             if(id=="raj" && pass=="raj")
+      |                                         ^
+      |                                          {
+   65 |             showAdmin();
+   66 |             else std::cout<<"Invalid Password"<<std::endl;
+      |             } 
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:66:17: warning: statement should be inside braces [readability-braces-around-statements]
+   66 |             else std::cout<<"Invalid Password"<<std::endl;
+      |                 ^                                         
+      |                  {
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:66:49: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   66 |             else std::cout<<"Invalid Password"<<std::endl;
+      |                                                 ^~~~~~~~~
+      |                                                 '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:72:14: warning: 5 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   72 |         case 5:
+      |              ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:75:14: warning: 6 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   75 |         case 6:
+      |              ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:78:51: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   78 |         std::cout<<"Invalid Input. Try again..."<<std::endl;
+      |                                                   ^~~~~~~~~
+      |                                                   '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:92:13: warning: variable name 'id' is too short, expected at least 3 characters [readability-identifier-length]
+   92 |         int id;
+      |             ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:93:9: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+   93 |         char pass[30];
+      |         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:93:19: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   93 |         char pass[30];
+      |                   ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:101:9: warning: use range-based for loop instead [modernize-loop-convert]
+  101 |         for(std::vector<Credential>::iterator itr=credVector.begin(); itr!=credVector.end(); ++itr)
+      |         ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |            (auto & itr : credVector)
+  102 |         {
+  103 |             if(userCredential==*itr)
+      |                                ~~~~
+      |                                itr
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:101:13: warning: use auto when declaring iterators [modernize-use-auto]
+  101 |         for(std::vector<Credential>::iterator itr=credVector.begin(); itr!=credVector.end(); ++itr)
+      |             ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:105:57: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  105 |                 std::cout<<"Authentication successful"<<std::endl;
+      |                                                         ^~~~~~~~~
+      |                                                         '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:113:55: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  113 |             std::cout<<"Authentication unsuccessful"<<std::endl;
+      |                                                       ^~~~~~~~~
+      |                                                       '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:130:39: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  130 |         std::cout<<"1. View Balance"<<std::endl;
+      |                                       ^~~~~~~~~
+      |                                       '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:131:44: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  131 |         std::cout<<"2. View Transactions"<<std::endl;
+      |                                            ^~~~~~~~~
+      |                                            '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:132:42: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  132 |         std::cout<<"3. Change Password"<<std::endl;
+      |                                          ^~~~~~~~~
+      |                                          '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:133:45: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  133 |         std::cout<<"4. Logout to Mainmenu"<<std::endl;
+      |                                             ^~~~~~~~~
+      |                                             '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:134:13: warning: variable name 'ch' is too short, expected at least 3 characters [readability-identifier-length]
+  134 |         int ch;
+      |             ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:140:17: warning: use range-based for loop instead [modernize-loop-convert]
+  140 |                 for(std::vector<Customer>::iterator itr=custVector.begin();
+      |                 ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                    (auto & itr : custVector)
+  141 |                 itr!=custVector.end();itr++)
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  142 |                 {
+  143 |                     if(itr->getID()==SESSION)
+      |                        ~~~~~
+      |                        itr.
+  144 |                     {
+  145 |                         itr->showDetails();
+      |                         ~~~~~
+      |                         itr.
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:140:21: warning: use auto when declaring iterators [modernize-use-auto]
+  140 |                 for(std::vector<Customer>::iterator itr=custVector.begin();
+      |                     ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:152:71: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  152 |                 std::cout<<"THIS PART IS NOT IMPLEMENTED YET. @TODO"<<std::endl;
+      |                                                                       ^~~~~~~~~
+      |                                                                       '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:162:42: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  162 |             std::cout<<"Invalid Option"<<std::endl;
+      |                                          ^~~~~~~~~
+      |                                          '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:178:9: warning: variable name 'id' is too short, expected at least 3 characters [readability-identifier-length]
+  178 |     int id;
+      |         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:179:5: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+  179 |     char pass[30];
+      |     ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:179:15: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  179 |     char pass[30];
+      |               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:187:5: warning: use range-based for loop instead [modernize-loop-convert]
+  187 |     for(std::vector<Credential>::iterator itr=credVector.begin(); itr!=credVector.end(); ++itr)
+      |     ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |        (auto & itr : credVector)
+  188 |     {
+  189 |         if(userCredential==*itr)
+      |                            ~~~~
+      |                            itr
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:187:9: warning: use auto when declaring iterators [modernize-use-auto]
+  187 |     for(std::vector<Credential>::iterator itr=credVector.begin(); itr!=credVector.end(); ++itr)
+      |         ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:191:53: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  191 |             std::cout<<"Authentication successful"<<std::endl<<std::endl;
+      |                                                     ^~~~~~~~~
+      |                                                     '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:191:64: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  191 |             std::cout<<"Authentication successful"<<std::endl<<std::endl;
+      |                                                                ^~~~~~~~~
+      |                                                                '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:199:51: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  199 |         std::cout<<"Authentication unsuccessful"<<std::endl;
+      |                                                   ^~~~~~~~~
+      |                                                   '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:207:11: warning: converting integer literal to bool, use bool literal instead [modernize-use-bool-literals]
+  207 |     while(1)
+      |           ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:207:11: warning: implicit conversion 'int' -> 'bool' [readability-implicit-bool-conversion]
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:209:39: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  209 |         std::cout<<"1. Add Customer"<<std::endl;
+      |                                       ^~~~~~~~~
+      |                                       '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:210:42: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  210 |         std::cout<<"2. Modify Customer"<<std::endl;
+      |                                          ^~~~~~~~~
+      |                                          '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:211:64: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  211 |         std::cout<<"3. View Customers(DEFAULT CHRONOLOGICAL)"<<std::endl;
+      |                                                                ^~~~~~~~~
+      |                                                                '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:212:44: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  212 |         std::cout<<"4. View Customers by"<<std::endl;
+      |                                            ^~~~~~~~~
+      |                                            '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:213:42: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  213 |         std::cout<<"5. Search Customer"<<std::endl;
+      |                                          ^~~~~~~~~
+      |                                          '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:214:60: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  214 |         std::cout<<"6. Deposit Money to Customer account"<<std::endl;
+      |                                                            ^~~~~~~~~
+      |                                                            '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:215:63: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  215 |         std::cout<<"7. Withdraw Money from Customer account"<<std::endl;
+      |                                                               ^~~~~~~~~
+      |                                                               '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:216:56: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  216 |         std::cout<<"8. Logout and return to mainmenu"<<std::endl;
+      |                                                        ^~~~~~~~~
+      |                                                        '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:217:13: warning: variable name 'ch' is too short, expected at least 3 characters [readability-identifier-length]
+  217 |         int ch;
+      |             ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:234:18: warning: 5 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  234 |             case 5:
+      |                  ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:235:64: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  235 |             std::cout<<"@TODO call Rajdeep to implement this"<<std::endl;
+      |                                                                ^~~~~~~~~
+      |                                                                '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:237:18: warning: 6 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  237 |             case 6:
+      |                  ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:240:18: warning: 7 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  240 |             case 7:
+      |                  ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:243:18: warning: 8 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  243 |             case 8:
+      |                  ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:247:42: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  247 |             std::cout<<"Invalid Option"<<std::endl;
+      |                                          ^~~~~~~~~
+      |                                          '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:249:21: warning: statement should be inside braces [readability-braces-around-statements]
+  249 |         if(!running)
+      |                     ^
+      |                      {
+  250 |         break;
+      |               
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:256:11: warning: converting integer literal to bool, use bool literal instead [modernize-use-bool-literals]
+  256 |     while(1)
+      |           ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:256:11: warning: implicit conversion 'int' -> 'bool' [readability-implicit-bool-conversion]
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:259:22: warning: 50 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  259 |     rajdeep.drawLine(50);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:260:34: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  260 |     std::cout<<"\tADMIN PORTAL"<<std::endl;
+      |                                  ^~~~~~~~~
+      |                                  '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:261:22: warning: 50 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  261 |     rajdeep.drawLine(50);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:263:9: warning: variable name 'ch' is too short, expected at least 3 characters [readability-identifier-length]
+  263 |     int ch;
+      |         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:279:14: warning: 5 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  279 |         case 5:
+      |              ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:282:14: warning: 6 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  282 |         case 6:
+      |              ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:285:14: warning: 7 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  285 |         case 7:
+      |              ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:288:14: warning: 8 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  288 |         case 8:
+      |              ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:291:14: warning: 9 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  291 |         case 9:
+      |              ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:294:14: warning: 10 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  294 |         case 10:
+      |              ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:297:14: warning: 11 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  297 |         case 11:
+      |              ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:301:38: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  301 |         std::cout<<"Invalid Choice"<<std::endl;
+      |                                      ^~~~~~~~~
+      |                                      '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:303:21: warning: statement should be inside braces [readability-braces-around-statements]
+  303 |         if(!running)
+      |                     ^
+      |                      {
+  304 |         break;
+      |               
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:312:22: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  312 |     rajdeep.drawLine(100);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:313:55: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  313 |     std::cout<<"\t\tBMS - Banking Management System"<<std::endl;
+      |                                                       ^~~~~~~~~
+      |                                                       '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:314:22: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  314 |     rajdeep.drawLine(100);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:315:16: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  315 |     std::cout<<std::endl<<"\tCreated by Rajdeep Roy Chowdhury<rrajdeeproychowdhury@gmail.com>"<<std::endl;
+      |                ^~~~~~~~~
+      |                '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:315:97: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  315 |     std::cout<<std::endl<<"\tCreated by Rajdeep Roy Chowdhury<rrajdeeproychowdhury@gmail.com>"<<std::endl;
+      |                                                                                                 ^~~~~~~~~
+      |                                                                                                 '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:316:86: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  316 |     std::cout<<"Btech CSE (2nd Sem), Lovely Professional University, Punjab, India"<<std::endl;
+      |                                                                                      ^~~~~~~~~
+      |                                                                                      '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:317:33: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  317 |     std::cout<<"Reg: 11712546"<<std::endl<<"Roll: RK17WXB55"<<std::endl;
+      |                                 ^~~~~~~~~
+      |                                 '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:317:63: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  317 |     std::cout<<"Reg: 11712546"<<std::endl<<"Roll: RK17WXB55"<<std::endl;
+      |                                                               ^~~~~~~~~
+      |                                                               '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:318:16: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  318 |     std::cout<<std::endl<<"This Banking Management System serves as project of CSE202(Object Oriented Programming)"<<std::endl;
+      |                ^~~~~~~~~
+      |                '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:318:118: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  318 |     std::cout<<std::endl<<"This Banking Management System serves as project of CSE202(Object Oriented Programming)"<<std::endl;
+      |                                                                                                                      ^~~~~~~~~
+      |                                                                                                                      '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:319:22: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  319 |     rajdeep.drawLine(100);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:320:5: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+  320 |     char buff[10];
+      |     ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:320:15: warning: 10 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  320 |     char buff[10];
+      |               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:321:33: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  321 |     std::cout<<"Y to Continue"<<std::endl;
+      |                                 ^~~~~~~~~
+      |                                 '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:335:9: warning: variable name 'id' is too short, expected at least 3 characters [readability-identifier-length]
+  335 |     int id;
+      |         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:340:5: warning: use range-based for loop instead [modernize-loop-convert]
+  340 |     for(std::vector<Customer>::iterator itr=custVector.begin(); itr!=custVector.end();++itr)
+      |     ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |        (auto & itr : custVector)
+  341 |     {
+  342 |         if(itr->getID()==id)
+      |            ~~~~~
+      |            itr.
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:340:9: warning: use auto when declaring iterators [modernize-use-auto]
+  340 |     for(std::vector<Customer>::iterator itr=custVector.begin(); itr!=custVector.end();++itr)
+      |         ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:351:9: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+  351 |         char name[30],address[30],pass[30];
+      |         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:351:9: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+  351 |         char name[30],address[30],pass[30];
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:351:19: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  351 |         char name[30],address[30],pass[30];
+      |                   ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:351:31: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  351 |         char name[30],address[30],pass[30];
+      |                               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:351:40: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  351 |         char name[30],address[30],pass[30];
+      |                                        ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:356:45: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  356 |         std::cout<<"Enter Customer Name; "<<std::endl;
+      |                                             ^~~~~~~~~
+      |                                             '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:357:31: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  357 |         std::cin.getline(name,30);
+      |                               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:358:38: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  358 |         std::cout<<"Enter address "<<std::endl;
+      |                                      ^~~~~~~~~
+      |                                      '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:359:34: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  359 |         std::cin.getline(address,30);
+      |                                  ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:360:36: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  360 |         std::cout<<"Enter phone "<<std::endl;
+      |                                    ^~~~~~~~~
+      |                                    '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:363:9: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+  363 |         int dd,mm,yy;
+      |         ^~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:363:13: warning: variable name 'dd' is too short, expected at least 3 characters [readability-identifier-length]
+  363 |         int dd,mm,yy;
+      |             ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:363:16: warning: variable name 'mm' is too short, expected at least 3 characters [readability-identifier-length]
+  363 |         int dd,mm,yy;
+      |                ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:363:19: warning: variable name 'yy' is too short, expected at least 3 characters [readability-identifier-length]
+  363 |         int dd,mm,yy;
+      |                   ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:368:31: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  368 |         std::cin.getline(pass,30);
+      |                               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:377:86: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  377 |         std::cout<<"Operation unsuccessful. Record with similar ID already exists."<<std::endl;
+      |                                                                                      ^~~~~~~~~
+      |                                                                                      '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:394:9: warning: variable name 'id' is too short, expected at least 3 characters [readability-identifier-length]
+  394 |     int id;
+      |         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:400:9: warning: use auto when declaring iterators [modernize-use-auto]
+  400 |     for(std::vector<Customer>::iterator itr=custVector.begin();
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         auto
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:411:9: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+  411 |         char name[30],address[30],pass[30];
+      |         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:411:9: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+  411 |         char name[30],address[30],pass[30];
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:411:19: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  411 |         char name[30],address[30],pass[30];
+      |                   ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:411:31: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  411 |         char name[30],address[30],pass[30];
+      |                               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:411:40: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  411 |         char name[30],address[30],pass[30];
+      |                                        ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:415:45: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  415 |         std::cout<<"Enter Customer Name; "<<std::endl;
+      |                                             ^~~~~~~~~
+      |                                             '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:417:31: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  417 |         std::cin.getline(name,30);
+      |                               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:418:38: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  418 |         std::cout<<"Enter address "<<std::endl;
+      |                                      ^~~~~~~~~
+      |                                      '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:419:34: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  419 |         std::cin.getline(address,30);
+      |                                  ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:420:36: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  420 |         std::cout<<"Enter phone "<<std::endl;
+      |                                    ^~~~~~~~~
+      |                                    '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:423:9: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+  423 |         int dd,mm,yy;
+      |         ^~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:423:13: warning: variable name 'dd' is too short, expected at least 3 characters [readability-identifier-length]
+  423 |         int dd,mm,yy;
+      |             ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:423:16: warning: variable name 'mm' is too short, expected at least 3 characters [readability-identifier-length]
+  423 |         int dd,mm,yy;
+      |                ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:423:19: warning: variable name 'yy' is too short, expected at least 3 characters [readability-identifier-length]
+  423 |         int dd,mm,yy;
+      |                   ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:428:31: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  428 |         std::cin.getline(pass,30);
+      |                               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:436:9: warning: use range-based for loop instead [modernize-loop-convert]
+  436 |         for(int i=0;i<custVector.size();i++)
+      |         ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |            (auto & i : custVector)
+  437 |         {
+  438 |             fout.write((char*)&custVector.at(i),sizeof(Customer));
+      |                                ~~~~~~~~~~~~~~~~
+      |                                i
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:443:77: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  443 |         std::cout<<"Customer account that is to be modified doesnot exist"<<std::endl;
+      |                                                                             ^~~~~~~~~
+      |                                                                             '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:457:22: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  457 |     rajdeep.drawLine(100);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:458:70: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  458 |     std::cout<<"ID\tNAME\tADDRESS\tPHONE\t\tDOB\tPASSWORD\tBALANCE"<<std::endl;
+      |                                                                      ^~~~~~~~~
+      |                                                                      '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:459:22: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  459 |     rajdeep.drawLine(100);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:460:5: warning: use range-based for loop instead [modernize-loop-convert]
+  460 |     for(std::vector<Customer>::iterator itr=custVector.begin();
+      |     ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |        (auto & itr : custVector)
+  461 |     itr!=custVector.end();++itr)
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  462 |     {
+  463 |         std::cout<<itr->getID()<<"\t"<<itr->getName()<<"\t"<<itr->getAddress()<<"\t"
+      |                    ~~~~~               ~~~~~                 ~~~~~
+      |                    itr.                itr.                  itr.
+  464 |         <<itr->getPhone()<<"\t"<<(itr->getDob()).toString()<<"\t"<<itr->getPass()<<
+      |           ~~~~~                   ~~~~~                            ~~~~~
+      |           itr.                    itr.                             itr.
+  465 |         "\t"<<itr->getBalance()<<std::endl;
+      |               ~~~~~
+      |               itr.
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:460:9: warning: use auto when declaring iterators [modernize-use-auto]
+  460 |     for(std::vector<Customer>::iterator itr=custVector.begin();
+      |         ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:465:34: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  465 |         "\t"<<itr->getBalance()<<std::endl;
+      |                                  ^~~~~~~~~
+      |                                  '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:467:22: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  467 |     rajdeep.drawLine(100);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:468:16: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  468 |     std::cout<<std::endl;
+      |                ^~~~~~~~~
+      |                '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:480:9: warning: variable name 'id' is too short, expected at least 3 characters [readability-identifier-length]
+  480 |     int id;
+      |         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:492:5: warning: use range-based for loop instead [modernize-loop-convert]
+  492 |     for(int i=0;i<custVector.size();++i)
+      |     ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |        (auto & i : custVector)
+  493 |     {
+  494 |         fout.write((char*)&custVector[i],sizeof(Customer));
+      |                            ~~~~~~~~~~~~~
+      |                            i
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:508:22: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  508 |     rajdeep.drawLine(100);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:511:9: warning: variable name 'ch' is too short, expected at least 3 characters [readability-identifier-length]
+  511 |     int ch;
+      |         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:512:34: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  512 |     std::cout<<"1. Sort by ID "<<std::endl;
+      |                                  ^~~~~~~~~
+      |                                  '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:513:36: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  513 |     std::cout<<"2. Sort by Name "<<std::endl;
+      |                                    ^~~~~~~~~
+      |                                    '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:514:45: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  514 |     std::cout<<"3. Sort by Date of Birth "<<std::endl;
+      |                                             ^~~~~~~~~
+      |                                             '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:515:39: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  515 |     std::cout<<"4. Sort by Balance "<<std::endl;
+      |                                       ^~~~~~~~~
+      |                                       '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:517:5: warning: switching on non-enum value without default case may not cover all cases [bugprone-switch-missing-default-case]
+  517 |     switch(ch)
+      |     ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:532:70: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  532 |     std::cout<<"ID\tNAME\tADDRESS\tPHONE\t\tDOB\tPASSWORD\tBALANCE"<<std::endl;
+      |                                                                      ^~~~~~~~~
+      |                                                                      '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:533:22: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  533 |     rajdeep.drawLine(100);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:534:5: warning: use range-based for loop instead [modernize-loop-convert]
+  534 |     for(std::vector<Customer>::iterator itr=custVector.begin();
+      |     ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |        (auto & itr : custVector)
+  535 |     itr!=custVector.end();++itr)
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  536 |     {
+  537 |         std::cout<<itr->getID()<<"\t"<<itr->getName()<<"\t"<<itr->getAddress()<<"\t"
+      |                    ~~~~~               ~~~~~                 ~~~~~
+      |                    itr.                itr.                  itr.
+  538 |         <<itr->getPhone()<<"\t"<<(itr->getDob()).toString()<<"\t"<<itr->getPass()<<
+      |           ~~~~~                   ~~~~~                            ~~~~~
+      |           itr.                    itr.                             itr.
+  539 |         "\t"<<itr->getBalance()<<std::endl;
+      |               ~~~~~
+      |               itr.
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:534:9: warning: use auto when declaring iterators [modernize-use-auto]
+  534 |     for(std::vector<Customer>::iterator itr=custVector.begin();
+      |         ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:539:34: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  539 |         "\t"<<itr->getBalance()<<std::endl;
+      |                                  ^~~~~~~~~
+      |                                  '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:541:22: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  541 |     rajdeep.drawLine(100);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:542:16: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  542 |     std::cout<<std::endl;
+      |                ^~~~~~~~~
+      |                '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:553:9: warning: variable name 'id' is too short, expected at least 3 characters [readability-identifier-length]
+  553 |     int id;
+      |         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:558:5: warning: use range-based for loop instead [modernize-loop-convert]
+  558 |     for(std::vector<Employee>::iterator itr=empVector.begin(); itr!=empVector.end();++itr)
+      |     ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |        (auto & itr : empVector)
+  559 |     {
+  560 |         if(itr->getID()==id)
+      |            ~~~~~
+      |            itr.
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:558:9: warning: use auto when declaring iterators [modernize-use-auto]
+  558 |     for(std::vector<Employee>::iterator itr=empVector.begin(); itr!=empVector.end();++itr)
+      |         ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:569:9: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+  569 |         char name[30],address[30],pass[30];
+      |         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:569:9: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+  569 |         char name[30],address[30],pass[30];
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:569:19: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  569 |         char name[30],address[30],pass[30];
+      |                   ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:569:31: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  569 |         char name[30],address[30],pass[30];
+      |                               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:569:40: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  569 |         char name[30],address[30],pass[30];
+      |                                        ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:573:45: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  573 |         std::cout<<"Enter Employee Name: "<<std::endl;
+      |                                             ^~~~~~~~~
+      |                                             '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:575:31: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  575 |         std::cin.getline(name,30);
+      |                               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:576:38: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  576 |         std::cout<<"Enter address "<<std::endl;
+      |                                      ^~~~~~~~~
+      |                                      '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:577:34: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  577 |         std::cin.getline(address,30);
+      |                                  ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:578:36: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  578 |         std::cout<<"Enter phone "<<std::endl;
+      |                                    ^~~~~~~~~
+      |                                    '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:581:9: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+  581 |         int dd,mm,yy;
+      |         ^~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:581:13: warning: variable name 'dd' is too short, expected at least 3 characters [readability-identifier-length]
+  581 |         int dd,mm,yy;
+      |             ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:581:16: warning: variable name 'mm' is too short, expected at least 3 characters [readability-identifier-length]
+  581 |         int dd,mm,yy;
+      |                ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:581:19: warning: variable name 'yy' is too short, expected at least 3 characters [readability-identifier-length]
+  581 |         int dd,mm,yy;
+      |                   ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:586:31: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  586 |         std::cin.getline(pass,30);
+      |                               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:595:86: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  595 |         std::cout<<"Operation unsuccessful. Record with similar ID already exists."<<std::endl;
+      |                                                                                      ^~~~~~~~~
+      |                                                                                      '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:612:9: warning: variable name 'id' is too short, expected at least 3 characters [readability-identifier-length]
+  612 |     int id;
+      |         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:618:9: warning: use auto when declaring iterators [modernize-use-auto]
+  618 |     for(std::vector<Employee>::iterator itr=empVector.begin();
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |         auto
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:629:9: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+  629 |         char name[30],address[30],pass[30];
+      |         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:629:9: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+  629 |         char name[30],address[30],pass[30];
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:629:19: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  629 |         char name[30],address[30],pass[30];
+      |                   ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:629:31: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  629 |         char name[30],address[30],pass[30];
+      |                               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:629:40: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  629 |         char name[30],address[30],pass[30];
+      |                                        ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:633:45: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  633 |         std::cout<<"Enter Employee Name; "<<std::endl;
+      |                                             ^~~~~~~~~
+      |                                             '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:635:31: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  635 |         std::cin.getline(name,30);
+      |                               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:636:38: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  636 |         std::cout<<"Enter address "<<std::endl;
+      |                                      ^~~~~~~~~
+      |                                      '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:637:34: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  637 |         std::cin.getline(address,30);
+      |                                  ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:638:36: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  638 |         std::cout<<"Enter phone "<<std::endl;
+      |                                    ^~~~~~~~~
+      |                                    '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:641:9: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+  641 |         int dd,mm,yy;
+      |         ^~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:641:13: warning: variable name 'dd' is too short, expected at least 3 characters [readability-identifier-length]
+  641 |         int dd,mm,yy;
+      |             ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:641:16: warning: variable name 'mm' is too short, expected at least 3 characters [readability-identifier-length]
+  641 |         int dd,mm,yy;
+      |                ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:641:19: warning: variable name 'yy' is too short, expected at least 3 characters [readability-identifier-length]
+  641 |         int dd,mm,yy;
+      |                   ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:646:31: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  646 |         std::cin.getline(pass,30);
+      |                               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:654:9: warning: use range-based for loop instead [modernize-loop-convert]
+  654 |         for(int i=0;i<empVector.size();i++)
+      |         ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |            (auto & i : empVector)
+  655 |         {
+  656 |             fout.write((char*)&empVector.at(i),sizeof(Employee));
+      |                                ~~~~~~~~~~~~~~~
+      |                                i
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:661:77: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  661 |         std::cout<<"Customer account that is to be modified doesnot exist"<<std::endl;
+      |                                                                             ^~~~~~~~~
+      |                                                                             '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:675:22: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  675 |     rajdeep.drawLine(100);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:676:69: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  676 |     std::cout<<"ID\tNAME\tADDRESS\tPHONE\t\tDOB\tPASSWORD\tSALARY"<<std::endl;
+      |                                                                     ^~~~~~~~~
+      |                                                                     '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:677:22: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  677 |     rajdeep.drawLine(100);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:678:5: warning: use range-based for loop instead [modernize-loop-convert]
+  678 |     for(std::vector<Employee>::iterator itr=empVector.begin();
+      |     ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |        (auto & itr : empVector)
+  679 |     itr!=empVector.end();++itr)
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  680 |     {
+  681 |         std::cout<<itr->getID()<<"\t"<<itr->getName()<<"\t"<<itr->getAddress()<<"\t"
+      |                    ~~~~~               ~~~~~                 ~~~~~
+      |                    itr.                itr.                  itr.
+  682 |         <<itr->getPhone()<<"\t"<<(itr->getDob()).toString()<<"\t"<<itr->getPass()<<
+      |           ~~~~~                   ~~~~~                            ~~~~~
+      |           itr.                    itr.                             itr.
+  683 |         "\t"<<itr->getSalary()<<std::endl;
+      |               ~~~~~
+      |               itr.
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:678:9: warning: use auto when declaring iterators [modernize-use-auto]
+  678 |     for(std::vector<Employee>::iterator itr=empVector.begin();
+      |         ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:683:33: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  683 |         "\t"<<itr->getSalary()<<std::endl;
+      |                                 ^~~~~~~~~
+      |                                 '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:685:22: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  685 |     rajdeep.drawLine(100);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:686:16: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  686 |     std::cout<<std::endl;
+      |                ^~~~~~~~~
+      |                '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:699:9: warning: variable name 'id' is too short, expected at least 3 characters [readability-identifier-length]
+  699 |     int id;
+      |         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:711:5: warning: use range-based for loop instead [modernize-loop-convert]
+  711 |     for(int i=0;i<empVector.size();++i)
+      |     ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |        (auto & i : empVector)
+  712 |     {
+  713 |         fout.write((char*)&empVector[i],sizeof(Employee));
+      |                            ~~~~~~~~~~~~
+      |                            i
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:728:22: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  728 |     rajdeep.drawLine(100);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:729:34: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  729 |     std::cout<<"Deposit Window"<<std::endl;
+      |                                  ^~~~~~~~~
+      |                                  '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:730:22: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  730 |     rajdeep.drawLine(100);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:731:9: warning: variable name 'id' is too short, expected at least 3 characters [readability-identifier-length]
+  731 |     int id;
+      |         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:738:5: warning: use range-based for loop instead [modernize-loop-convert]
+  738 |     for(std::vector<Customer>::iterator itr=custVector.begin();itr!=custVector.end();++itr)
+      |     ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |        (auto & itr : custVector)
+  739 |     {
+  740 |         if(itr->getID()==id)
+      |            ~~~~~
+      |            itr.
+  741 |         {
+  742 |             itr->deposit(money);
+      |             ~~~~~
+      |             itr.
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:738:9: warning: use auto when declaring iterators [modernize-use-auto]
+  738 |     for(std::vector<Customer>::iterator itr=custVector.begin();itr!=custVector.end();++itr)
+      |         ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:749:5: warning: use range-based for loop instead [modernize-loop-convert]
+  749 |     for(int i=0;i<custVector.size();i++)
+      |     ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |        (auto & i : custVector)
+  750 |     {
+  751 |         fout.write((char*)&custVector.at(i),sizeof(Customer));
+      |                            ~~~~~~~~~~~~~~~~
+      |                            i
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:754:16: warning: statement should be inside braces [readability-braces-around-statements]
+  754 |     if(SUCCESS)
+      |                ^
+      |                 {
+  755 |     std::cout<<"Successfully deposited Rs. "<<money<<std::endl;
+  756 |     else
+      |     } 
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:755:54: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  755 |     std::cout<<"Successfully deposited Rs. "<<money<<std::endl;
+      |                                                      ^~~~~~~~~
+      |                                                      '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:756:9: warning: statement should be inside braces [readability-braces-around-statements]
+  756 |     else
+      |         ^
+      |          {
+  757 |     std::cout<<"Transaction could not be completed. Please contact the nearest Branch."<<std::endl;
+      |                                                                                                    
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:757:90: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  757 |     std::cout<<"Transaction could not be completed. Please contact the nearest Branch."<<std::endl;
+      |                                                                                          ^~~~~~~~~
+      |                                                                                          '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:771:22: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  771 |     rajdeep.drawLine(100);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:772:35: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  772 |     std::cout<<"Withdraw Window"<<std::endl;
+      |                                   ^~~~~~~~~
+      |                                   '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:773:22: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  773 |     rajdeep.drawLine(100);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:774:9: warning: variable name 'id' is too short, expected at least 3 characters [readability-identifier-length]
+  774 |     int id;
+      |         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:781:5: warning: use range-based for loop instead [modernize-loop-convert]
+  781 |     for(std::vector<Customer>::iterator itr=custVector.begin();itr!=custVector.end();++itr)
+      |     ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |        (auto & itr : custVector)
+  782 |     {
+  783 |         if(itr->getID()==id)
+      |            ~~~~~
+      |            itr.
+  784 |         {
+  785 |             itr->withdraw(money);
+      |             ~~~~~
+      |             itr.
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:781:9: warning: use auto when declaring iterators [modernize-use-auto]
+  781 |     for(std::vector<Customer>::iterator itr=custVector.begin();itr!=custVector.end();++itr)
+      |         ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:792:5: warning: use range-based for loop instead [modernize-loop-convert]
+  792 |     for(int i=0;i<custVector.size();i++)
+      |     ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |        (auto & i : custVector)
+  793 |     {
+  794 |         fout.write((char*)&custVector.at(i),sizeof(Customer));
+      |                            ~~~~~~~~~~~~~~~~
+      |                            i
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:797:16: warning: statement should be inside braces [readability-braces-around-statements]
+  797 |     if(SUCCESS)
+      |                ^
+      |                 {
+  798 |     std::cout<<"Successfully withdrawn Rs. "<<money<<std::endl;
+  799 |     else
+      |     } 
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:798:54: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  798 |     std::cout<<"Successfully withdrawn Rs. "<<money<<std::endl;
+      |                                                      ^~~~~~~~~
+      |                                                      '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:799:9: warning: statement should be inside braces [readability-braces-around-statements]
+  799 |     else
+      |         ^
+      |          {
+  800 |     std::cout<<"Transaction could not be completed. Please contact the nearest Branch."<<std::endl;
+      |                                                                                                    
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:800:90: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  800 |     std::cout<<"Transaction could not be completed. Please contact the nearest Branch."<<std::endl;
+      |                                                                                          ^~~~~~~~~
+      |                                                                                          '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:815:5: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+  815 |     char prevpass[30],newpass[30];
+      |     ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:815:5: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+  815 |     char prevpass[30],newpass[30];
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:815:19: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  815 |     char prevpass[30],newpass[30];
+      |                   ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:815:31: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  815 |     char prevpass[30],newpass[30];
+      |                               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:816:22: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  816 |     rajdeep.drawLine(100);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:817:35: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  817 |     std::cout<<"CHANGE PASSWORD"<<std::endl;
+      |                                   ^~~~~~~~~
+      |                                   '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:818:22: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  818 |     rajdeep.drawLine(100);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:821:31: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  821 |     std::cin.getline(prevpass,30);
+      |                               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:823:30: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  823 |     std::cin.getline(newpass,30);
+      |                              ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:825:5: warning: use range-based for loop instead [modernize-loop-convert]
+  825 |     for(std::vector<Customer>::iterator itr=custVector.begin();
+      |     ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |        (auto & itr : custVector)
+  826 |     itr!=custVector.end();++itr)
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  827 |     {
+  828 |         if((itr->getID()==SESSION) && !strcmp(itr->getPass(),prevpass))
+      |             ~~~~~                             ~~~~~
+      |             itr.                              itr.
+  829 |         {
+  830 |             itr->setPass(newpass);
+      |             ~~~~~
+      |             itr.
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:825:9: warning: use auto when declaring iterators [modernize-use-auto]
+  825 |     for(std::vector<Customer>::iterator itr=custVector.begin();
+      |         ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:828:40: warning: implicit conversion 'int' -> 'bool' [readability-implicit-bool-conversion]
+  828 |         if((itr->getID()==SESSION) && !strcmp(itr->getPass(),prevpass))
+      |                                       ~^                              
+      |                                       (                                == 0)
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:835:16: warning: statement should be inside braces [readability-braces-around-statements]
+  835 |     if(SUCCESS)
+      |                ^
+      |                 {
+  836 |     std::cout<<"Successfully changed your password. Kindly dont share your password with anyone else."<<std::endl;
+  837 |     else{ std::cout<<"Could not process your request. Please visit the nearest branch."<<std::endl;
+      |     } 
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:836:105: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  836 |     std::cout<<"Successfully changed your password. Kindly dont share your password with anyone else."<<std::endl;
+      |                                                                                                         ^~~~~~~~~
+      |                                                                                                         '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:837:90: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  837 |     else{ std::cout<<"Could not process your request. Please visit the nearest branch."<<std::endl;
+      |                                                                                          ^~~~~~~~~
+      |                                                                                          '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:838:71: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  838 |     std::cout<<"Possibly, you have entered wrong previous password."<<std::endl;
+      |                                                                       ^~~~~~~~~
+      |                                                                       '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:842:5: warning: use range-based for loop instead [modernize-loop-convert]
+  842 |     for(int i=0;i<custVector.size();i++)
+      |     ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |        (auto & i : custVector)
+  843 |     {
+  844 |         fout.write((char*)&custVector.at(i),sizeof(Customer));
+      |                            ~~~~~~~~~~~~~~~~
+      |                            i
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:859:16: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  859 |     std::cout<<std::endl;
+      |                ^~~~~~~~~
+      |                '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:860:22: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  860 |     rajdeep.drawLine(100);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:862:5: warning: do not declare C-style arrays, use std::array<> instead [modernize-avoid-c-arrays]
+  862 |     char buff[10];
+      |     ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:862:15: warning: 10 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+  862 |     char buff[10];
+      |               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:863:33: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+  863 |     std::cout<<"Y to Continue"<<std::endl;
+      |                                 ^~~~~~~~~
+      |                                 '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:868:18: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+  868 | bool Controller::sortCustomerByName(const Customer& c1,const Customer& c2)
+      | ~~~~             ^                                                        
+      | auto                                                                       -> bool
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:868:53: warning: parameter name 'c1' is too short, expected at least 3 characters [readability-identifier-length]
+  868 | bool Controller::sortCustomerByName(const Customer& c1,const Customer& c2)
+      |                                                     ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:868:72: warning: parameter name 'c2' is too short, expected at least 3 characters [readability-identifier-length]
+  868 | bool Controller::sortCustomerByName(const Customer& c1,const Customer& c2)
+      |                                                                        ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:870:44: warning: statement should be inside braces [readability-braces-around-statements]
+  870 |     if(strcmp(c1.getName(),c2.getName())<0)
+      |                                            ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:871:12: warning: redundant boolean literal in conditional return statement [readability-simplify-boolean-expr]
+  870 |     if(strcmp(c1.getName(),c2.getName())<0)
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     return strcmp(c1.getName(),c2.getName())<0
+  871 |     return true;
+      |     ~~~~~~~^~~~~
+  872 |     else return false;
+      |     ~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:872:5: warning: do not use 'else' after 'return' [readability-else-after-return]
+  872 |     else return false;
+      |     ^~~~
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:872:9: warning: statement should be inside braces [readability-braces-around-statements]
+  872 |     else return false;
+      |         ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:874:18: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+  874 | bool Controller::sortCustomerByDob(const Customer& c1,const Customer& c2)
+      | ~~~~             ^                                                       
+      | auto                                                                      -> bool
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:874:52: warning: parameter name 'c1' is too short, expected at least 3 characters [readability-identifier-length]
+  874 | bool Controller::sortCustomerByDob(const Customer& c1,const Customer& c2)
+      |                                                    ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:874:71: warning: parameter name 'c2' is too short, expected at least 3 characters [readability-identifier-length]
+  874 | bool Controller::sortCustomerByDob(const Customer& c1,const Customer& c2)
+      |                                                                       ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:876:32: warning: statement should be inside braces [readability-braces-around-statements]
+  876 |     if(c1.getDob()<c2.getDob())
+      |                                ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:877:12: warning: redundant boolean literal in conditional return statement [readability-simplify-boolean-expr]
+  876 |     if(c1.getDob()<c2.getDob())
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     return c1.getDob()<c2.getDob()
+  877 |     return true;
+      |     ~~~~~~~^~~~~
+  878 |     else return false;
+      |     ~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:878:5: warning: do not use 'else' after 'return' [readability-else-after-return]
+  878 |     else return false;
+      |     ^~~~
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:878:9: warning: statement should be inside braces [readability-braces-around-statements]
+  878 |     else return false;
+      |         ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:880:18: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+  880 | bool Controller::sortCustomerById(const Customer& c1,const Customer& c2)
+      | ~~~~             ^                                                      
+      | auto                                                                     -> bool
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:880:51: warning: parameter name 'c1' is too short, expected at least 3 characters [readability-identifier-length]
+  880 | bool Controller::sortCustomerById(const Customer& c1,const Customer& c2)
+      |                                                   ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:880:70: warning: parameter name 'c2' is too short, expected at least 3 characters [readability-identifier-length]
+  880 | bool Controller::sortCustomerById(const Customer& c1,const Customer& c2)
+      |                                                                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:882:30: warning: statement should be inside braces [readability-braces-around-statements]
+  882 |     if(c1.getID()<c2.getID())
+      |                              ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:883:12: warning: redundant boolean literal in conditional return statement [readability-simplify-boolean-expr]
+  882 |     if(c1.getID()<c2.getID())
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     return c1.getID()<c2.getID()
+  883 |     return true;
+      |     ~~~~~~~^~~~~
+  884 |     else return false;
+      |     ~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:884:5: warning: do not use 'else' after 'return' [readability-else-after-return]
+  884 |     else return false;
+      |     ^~~~
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:884:9: warning: statement should be inside braces [readability-braces-around-statements]
+  884 |     else return false;
+      |         ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:886:18: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+  886 | bool Controller::sortCustomerByBalance(const Customer& c1,const Customer& c2)
+      | ~~~~             ^                                                           
+      | auto                                                                          -> bool
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:886:56: warning: parameter name 'c1' is too short, expected at least 3 characters [readability-identifier-length]
+  886 | bool Controller::sortCustomerByBalance(const Customer& c1,const Customer& c2)
+      |                                                        ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:886:75: warning: parameter name 'c2' is too short, expected at least 3 characters [readability-identifier-length]
+  886 | bool Controller::sortCustomerByBalance(const Customer& c1,const Customer& c2)
+      |                                                                           ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:888:40: warning: statement should be inside braces [readability-braces-around-statements]
+  888 |     if(c1.getBalance()<c2.getBalance())
+      |                                        ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:889:12: warning: redundant boolean literal in conditional return statement [readability-simplify-boolean-expr]
+  888 |     if(c1.getBalance()<c2.getBalance())
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     return c1.getBalance()<c2.getBalance()
+  889 |     return true;
+      |     ~~~~~~~^~~~~
+  890 |     else return false;
+      |     ~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:890:5: warning: do not use 'else' after 'return' [readability-else-after-return]
+  890 |     else return false;
+      |     ^~~~
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:890:9: warning: statement should be inside braces [readability-braces-around-statements]
+  890 |     else return false;
+      |         ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/customer.h:29:33: warning: 2 uninitialized fields at the end of the constructor call [clang-analyzer-optin.cplusplus.UninitializedObject]
+   29 |     Customer():Person(),balance(0){}
+      |                                 ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.h:27:9: note: uninitialized field 'this->Person::ID'
+   27 |     int ID;
+      |         ^~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.h:32:14: note: uninitialized field 'this->Person::phone'
+   32 |     long int phone;
+      |              ^~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:49:5: note: Control jumps to 'case 1:'  at line 51
+   49 |     switch(ch)
+      |     ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:52:9: note: Calling 'Controller::showCustomerLogin'
+   52 |         showCustomerLogin();
+      |         ^~~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:83:18: note: Calling default constructor for 'Customer'
+   83 |         Customer cust;
+      |                  ^~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/customer.h:29:33: note: 2 uninitialized fields at the end of the constructor call
+   29 |     Customer():Person(),balance(0){}
+      |                                 ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/employee.h:30:32: warning: 2 uninitialized fields at the end of the constructor call [clang-analyzer-optin.cplusplus.UninitializedObject]
+   30 |     Employee():Person(),salary(0){}
+      |                                ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.h:27:9: note: uninitialized field 'this->Person::ID'
+   27 |     int ID;
+      |         ^~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.h:32:14: note: uninitialized field 'this->Person::phone'
+   32 |     long int phone;
+      |              ^~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:49:5: note: Control jumps to 'case 2:'  at line 54
+   49 |     switch(ch)
+      |     ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:55:9: note: Calling 'Controller::showEmployeeLogin'
+   55 |         showEmployeeLogin();
+      |         ^~~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:169:14: note: Calling default constructor for 'Employee'
+  169 |     Employee emp;
+      |              ^~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/employee.h:30:32: note: 2 uninitialized fields at the end of the constructor call
+   30 |     Employee():Person(),salary(0){}
+      |                                ^
+Suppressed 25484 warnings (25484 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+
+
+---------------------------------------------------
+Analiziram fajl: ../OnlineBankingSystem/credential.cpp
+18488 warnings generated.
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/credential.cpp:20:18: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   20 | bool Credential::operator==(const Credential &other)
+      | ~~~~             ^                                  
+      | auto                                                 -> bool
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/credential.cpp:24:16: warning: redundant boolean literal in conditional return statement [readability-simplify-boolean-expr]
+   22 |     if(ID==other.ID && (strcmp(pass,other.pass)==0))
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     return ID==other.ID && (strcmp(pass,other.pass)==0);
+   23 |     {
+      |     ~
+   24 |         return true;
+      |         ~~~~~~~^~~~~
+   25 |     }
+      |     ~
+   26 |     else{
+      |     ~~~~~
+   27 |         return false;
+      |         ~~~~~~~~~~~~~
+   28 |     }
+      |     ~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/credential.cpp:26:5: warning: do not use 'else' after 'return' [readability-else-after-return]
+   26 |     else{
+      |     ^~~~
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/credential.cpp:30:28: warning: parameter name 'ID' is too short, expected at least 3 characters [readability-identifier-length]
+   30 | void Credential::setID(int ID)
+      |                            ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/credential.cpp:36:5: warning: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+   36 |     strcpy(this->pass,pass);
+      |     ^~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/credential.cpp:36:5: note: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119
+   36 |     strcpy(this->pass,pass);
+      |     ^~~~~~
+Suppressed 18483 warnings (18483 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+
+
+---------------------------------------------------
+Analiziram fajl: ../OnlineBankingSystem/customer.cpp
+18527 warnings generated.
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/customer.cpp:21:15: warning: do not use 'endl' with streams; use '\n' instead [performance-avoid-endl]
+   21 |     cout<<ID<<endl<<name<<endl<<address<<endl<<phone<<endl<<dob.toString()<<endl<<balance<<endl;
+      |               ^~~~
+      |               '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/customer.cpp:21:27: warning: do not use 'endl' with streams; use '\n' instead [performance-avoid-endl]
+   21 |     cout<<ID<<endl<<name<<endl<<address<<endl<<phone<<endl<<dob.toString()<<endl<<balance<<endl;
+      |                           ^~~~
+      |                           '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/customer.cpp:21:42: warning: do not use 'endl' with streams; use '\n' instead [performance-avoid-endl]
+   21 |     cout<<ID<<endl<<name<<endl<<address<<endl<<phone<<endl<<dob.toString()<<endl<<balance<<endl;
+      |                                          ^~~~
+      |                                          '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/customer.cpp:21:55: warning: do not use 'endl' with streams; use '\n' instead [performance-avoid-endl]
+   21 |     cout<<ID<<endl<<name<<endl<<address<<endl<<phone<<endl<<dob.toString()<<endl<<balance<<endl;
+      |                                                       ^~~~
+      |                                                       '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/customer.cpp:21:77: warning: do not use 'endl' with streams; use '\n' instead [performance-avoid-endl]
+   21 |     cout<<ID<<endl<<name<<endl<<address<<endl<<phone<<endl<<dob.toString()<<endl<<balance<<endl;
+      |                                                                             ^~~~
+      |                                                                             '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/customer.cpp:21:92: warning: do not use 'endl' with streams; use '\n' instead [performance-avoid-endl]
+   21 |     cout<<ID<<endl<<name<<endl<<address<<endl<<phone<<endl<<dob.toString()<<endl<<balance<<endl;
+      |                                                                                            ^~~~
+      |                                                                                            '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/customer.cpp:23:17: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   23 | float Customer::getBalance() const{
+      | ~~~~~           ^                 
+      | auto                               -> float
+Suppressed 18520 warnings (18520 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+
+
+---------------------------------------------------
+Analiziram fajl: ../OnlineBankingSystem/employee.cpp
+18526 warnings generated.
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/employee.cpp:22:15: warning: do not use 'endl' with streams; use '\n' instead [performance-avoid-endl]
+   22 |     cout<<ID<<endl<<name<<endl<<address<<endl<<phone<<endl<<dob.toString()<<endl<<salary<<endl;
+      |               ^~~~
+      |               '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/employee.cpp:22:27: warning: do not use 'endl' with streams; use '\n' instead [performance-avoid-endl]
+   22 |     cout<<ID<<endl<<name<<endl<<address<<endl<<phone<<endl<<dob.toString()<<endl<<salary<<endl;
+      |                           ^~~~
+      |                           '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/employee.cpp:22:42: warning: do not use 'endl' with streams; use '\n' instead [performance-avoid-endl]
+   22 |     cout<<ID<<endl<<name<<endl<<address<<endl<<phone<<endl<<dob.toString()<<endl<<salary<<endl;
+      |                                          ^~~~
+      |                                          '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/employee.cpp:22:55: warning: do not use 'endl' with streams; use '\n' instead [performance-avoid-endl]
+   22 |     cout<<ID<<endl<<name<<endl<<address<<endl<<phone<<endl<<dob.toString()<<endl<<salary<<endl;
+      |                                                       ^~~~
+      |                                                       '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/employee.cpp:22:77: warning: do not use 'endl' with streams; use '\n' instead [performance-avoid-endl]
+   22 |     cout<<ID<<endl<<name<<endl<<address<<endl<<phone<<endl<<dob.toString()<<endl<<salary<<endl;
+      |                                                                             ^~~~
+      |                                                                             '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/employee.cpp:22:91: warning: do not use 'endl' with streams; use '\n' instead [performance-avoid-endl]
+   22 |     cout<<ID<<endl<<name<<endl<<address<<endl<<phone<<endl<<dob.toString()<<endl<<salary<<endl;
+      |                                                                                           ^~~~
+      |                                                                                           '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/employee.cpp:24:17: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   24 | float Employee::getSalary() const
+      | ~~~~~           ^                
+      | auto                              -> float
+Suppressed 18519 warnings (18519 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+
+
+---------------------------------------------------
+Analiziram fajl: ../OnlineBankingSystem/main.cpp
+28448 warnings generated.
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/customer.h:29:33: warning: 2 uninitialized fields at the end of the constructor call [clang-analyzer-optin.cplusplus.UninitializedObject]
+   29 |     Customer():Person(),balance(0){}
+      |                                 ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.h:27:9: note: uninitialized field 'this->Person::ID'
+   27 |     int ID;
+      |         ^~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.h:32:14: note: uninitialized field 'this->Person::phone'
+   32 |     long int phone;
+      |              ^~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/main.cpp:8:5: note: Loop condition is true.  Entering loop body
+    8 |     while(1)
+      |     ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/main.cpp:11:9: note: Calling 'Controller::showMenu'
+   11 |         Controller::showMenu();
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:49:5: note: Control jumps to 'case 1:'  at line 51
+   49 |     switch(ch)
+      |     ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:52:9: note: Calling 'Controller::showCustomerLogin'
+   52 |         showCustomerLogin();
+      |         ^~~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:83:18: note: Calling default constructor for 'Customer'
+   83 |         Customer cust;
+      |                  ^~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/customer.h:29:33: note: 2 uninitialized fields at the end of the constructor call
+   29 |     Customer():Person(),balance(0){}
+      |                                 ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/employee.h:30:32: warning: 2 uninitialized fields at the end of the constructor call [clang-analyzer-optin.cplusplus.UninitializedObject]
+   30 |     Employee():Person(),salary(0){}
+      |                                ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.h:27:9: note: uninitialized field 'this->Person::ID'
+   27 |     int ID;
+      |         ^~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.h:32:14: note: uninitialized field 'this->Person::phone'
+   32 |     long int phone;
+      |              ^~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/main.cpp:8:5: note: Loop condition is true.  Entering loop body
+    8 |     while(1)
+      |     ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/main.cpp:11:9: note: Calling 'Controller::showMenu'
+   11 |         Controller::showMenu();
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:49:5: note: Control jumps to 'case 2:'  at line 54
+   49 |     switch(ch)
+      |     ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:55:9: note: Calling 'Controller::showEmployeeLogin'
+   55 |         showEmployeeLogin();
+      |         ^~~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/controller.cpp:169:14: note: Calling default constructor for 'Employee'
+  169 |     Employee emp;
+      |              ^~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/employee.h:30:32: note: 2 uninitialized fields at the end of the constructor call
+   30 |     Employee():Person(),salary(0){}
+      |                                ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/main.cpp:6:5: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+    6 | int main(int argc,char *argv[])
+      | ~~~ ^                          
+      | auto                            -> int
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/main.cpp:8:11: warning: converting integer literal to bool, use bool literal instead [modernize-use-bool-literals]
+    8 |     while(1)
+      |           ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/main.cpp:8:11: warning: implicit conversion 'int' -> 'bool' [readability-implicit-bool-conversion]
+note: this fix will not be applied because it overlaps with another fix
+Suppressed 28430 warnings (28430 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+
+
+---------------------------------------------------
+Analiziram fajl: ../OnlineBankingSystem/person.cpp
+18521 warnings generated.
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.cpp:22:5: warning: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+   22 |     strcpy(this->name,other.name);
+      |     ^~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.cpp:22:5: note: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119
+   22 |     strcpy(this->name,other.name);
+      |     ^~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.cpp:23:5: warning: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+   23 |     strcpy(this->address,other.address);
+      |     ^~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.cpp:23:5: note: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119
+   23 |     strcpy(this->address,other.address);
+      |     ^~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.cpp:26:5: warning: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+   26 |     strcpy(this->pass,other.pass);
+      |     ^~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.cpp:26:5: note: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119
+   26 |     strcpy(this->pass,other.pass);
+      |     ^~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.cpp:28:13: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   28 | int Person::getID() const{
+      | ~~~         ^            
+      | auto                      -> int
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.cpp:31:21: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   31 | const char* Person::getName() const{
+      | ~~~~~~~~~~~         ^              
+      | auto                                -> const char*
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.cpp:34:21: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   34 | const char* Person::getAddress() const{
+      | ~~~~~~~~~~~         ^                 
+      | auto                                   -> const char*
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.cpp:37:18: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   37 | long int Person::getPhone() const{
+      | ~~~~~~~~         ^               
+      | auto                              -> long int
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.cpp:40:20: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   40 |  TimeStamp Person::getDob() const{
+      |  ~~~~~~~~~         ^             
+      |  auto                             -> TimeStamp
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.cpp:43:21: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   43 | const char* Person::getPass() const{
+      | ~~~~~~~~~~~         ^              
+      | auto                                -> const char*
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.cpp:48:5: warning: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+   48 |     std::strcpy(this->pass,newpass);
+      |     ^~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/person.cpp:48:5: note: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119
+   48 |     std::strcpy(this->pass,newpass);
+      |     ^~~~~~~~~~~
+Suppressed 18511 warnings (18511 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+
+
+---------------------------------------------------
+Analiziram fajl: ../OnlineBankingSystem/rajdeep.cpp
+18251 warnings generated.
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:19:15: warning: method 'delay' can be made static [readability-convert-member-functions-to-static]
+   19 | void Rajdeep::delay() const{
+      |               ^       ~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:20:5: warning: multiple declarations in a single statement reduces readability [readability-isolate-declaration]
+   20 |     int i,j;
+      |     ^~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:20:9: warning: variable name 'i' is too short, expected at least 3 characters [readability-identifier-length]
+   20 |     int i,j;
+      |         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:20:11: warning: variable name 'j' is too short, expected at least 3 characters [readability-identifier-length]
+   20 |     int i,j;
+      |           ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:21:15: warning: 100000 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   21 |     for(i=0;i<100000;i++)
+      |               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:21:26: warning: statement should be inside braces [readability-braces-around-statements]
+   21 |     for(i=0;i<100000;i++)
+      |                          ^
+      |                           {
+   22 |     for(j=0;j<10000;j++);
+      |                          
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:22:15: warning: 10000 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   22 |     for(j=0;j<10000;j++);
+      |               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:22:25: warning: statement should be inside braces [readability-braces-around-statements]
+   22 |     for(j=0;j<10000;j++);
+      |                         ^
+      |                          {
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:25:36: warning: parameter name 'ms' is too short, expected at least 3 characters [readability-identifier-length]
+   25 | void Rajdeep::delay(const long int ms) const{
+      |                                    ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:28:15: warning: method 'drawLine' can be made static [readability-convert-member-functions-to-static]
+   28 | void Rajdeep::drawLine(int n=50) const{
+      |               ^                  ~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:28:30: warning: 50 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   28 | void Rajdeep::drawLine(int n=50) const{
+      |                              ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:29:9: warning: variable name 'i' is too short, expected at least 3 characters [readability-identifier-length]
+   29 |     int i;
+      |         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:34:16: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   34 |     std::cout<<std::endl;
+      |                ^~~~~~~~~
+      |                '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:36:15: warning: method 'drawLine' can be made static [readability-convert-member-functions-to-static]
+   36 | void Rajdeep::drawLine(const char ch,int n=50) const{
+      |               ^                                ~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:36:35: warning: parameter name 'ch' is too short, expected at least 3 characters [readability-identifier-length]
+   36 | void Rajdeep::drawLine(const char ch,int n=50) const{
+      |                                   ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:36:44: warning: 50 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   36 | void Rajdeep::drawLine(const char ch,int n=50) const{
+      |                                            ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:37:9: warning: variable name 'i' is too short, expected at least 3 characters [readability-identifier-length]
+   37 |     int i;
+      |         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:42:16: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   42 |     std::cout<<std::endl;
+      |                ^~~~~~~~~
+      |                '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:44:29: warning: 2 adjacent parameters of 'drawLineTrans' of similar type ('int') are easily swapped by mistake [bugprone-easily-swappable-parameters]
+   44 | void Rajdeep::drawLineTrans(int n=50,int ms=50) const{
+      |                             ^~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:44:33: note: the first parameter in the range is 'n'
+   44 | void Rajdeep::drawLineTrans(int n=50,int ms=50) const{
+      |                                 ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:44:42: note: the last parameter in the range is 'ms'
+   44 | void Rajdeep::drawLineTrans(int n=50,int ms=50) const{
+      |                                          ^~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:44:35: warning: 50 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   44 | void Rajdeep::drawLineTrans(int n=50,int ms=50) const{
+      |                                   ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:44:42: warning: parameter name 'ms' is too short, expected at least 3 characters [readability-identifier-length]
+   44 | void Rajdeep::drawLineTrans(int n=50,int ms=50) const{
+      |                                          ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:44:45: warning: 50 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   44 | void Rajdeep::drawLineTrans(int n=50,int ms=50) const{
+      |                                             ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:45:9: warning: variable name 'i' is too short, expected at least 3 characters [readability-identifier-length]
+   45 |     int i;
+      |         ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:49:15: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   49 |         delay(100);
+      |               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:51:16: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   51 |     std::cout<<std::endl;
+      |                ^~~~~~~~~
+      |                '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:53:40: warning: parameter name 'ch' is too short, expected at least 3 characters [readability-identifier-length]
+   53 | void Rajdeep::drawLineTrans(const char ch,int n=50,int ms=50) const{
+      |                                        ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:53:43: warning: 2 adjacent parameters of 'drawLineTrans' of similar type ('int') are easily swapped by mistake [bugprone-easily-swappable-parameters]
+   53 | void Rajdeep::drawLineTrans(const char ch,int n=50,int ms=50) const{
+      |                                           ^~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:53:47: note: the first parameter in the range is 'n'
+   53 | void Rajdeep::drawLineTrans(const char ch,int n=50,int ms=50) const{
+      |                                               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:53:56: note: the last parameter in the range is 'ms'
+   53 | void Rajdeep::drawLineTrans(const char ch,int n=50,int ms=50) const{
+      |                                                        ^~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:53:49: warning: 50 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   53 | void Rajdeep::drawLineTrans(const char ch,int n=50,int ms=50) const{
+      |                                                 ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:53:56: warning: parameter name 'ms' is too short, expected at least 3 characters [readability-identifier-length]
+   53 | void Rajdeep::drawLineTrans(const char ch,int n=50,int ms=50) const{
+      |                                                        ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:53:59: warning: 50 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   53 | void Rajdeep::drawLineTrans(const char ch,int n=50,int ms=50) const{
+      |                                                           ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:54:10: warning: variable name 'i' is too short, expected at least 3 characters [readability-identifier-length]
+   54 |      int i;
+      |          ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:58:15: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   58 |         delay(100);
+      |               ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:60:16: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   60 |     std::cout<<std::endl;
+      |                ^~~~~~~~~
+      |                '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:62:43: warning: the const qualified parameter 'str' is copied for each invocation; consider making it a reference [performance-unnecessary-value-param]
+   62 | void Rajdeep::transText(const std::string str,int ms) const{
+      |                                           ^
+      |                                          &
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/rajdeep.cpp:62:51: warning: parameter name 'ms' is too short, expected at least 3 characters [readability-identifier-length]
+   62 | void Rajdeep::transText(const std::string str,int ms) const{
+      |                                                   ^
+Suppressed 18216 warnings (18216 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+
+
+---------------------------------------------------
+Analiziram fajl: ../OnlineBankingSystem/timestamp.cpp
+18924 warnings generated.
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:27:24: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   27 | std::string TimeStamp::toString() const{
+      | ~~~~~~~~~~~            ^               
+      | auto                                    -> std::string
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:28:23: warning: variable name 'ss' is too short, expected at least 3 characters [readability-identifier-length]
+   28 |     std::stringstream ss;
+      |                       ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:32:16: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   32 | int TimeStamp::timeWeight() const{
+      | ~~~            ^                 
+      | auto                              -> int
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:33:12: warning: narrowing conversion from 'unsigned int' to signed type 'int' is implementation-defined [bugprone-narrowing-conversions]
+   33 |     return ((year*10000)+(month*100)+date);
+      |            ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:33:19: warning: 10000 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   33 |     return ((year*10000)+(month*100)+date);
+      |                   ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:33:33: warning: 100 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   33 |     return ((year*10000)+(month*100)+date);
+      |                                 ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:35:17: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   35 | bool TimeStamp::operator>(const TimeStamp& other) const{
+      | ~~~~            ^                                      
+      | auto                                                    -> bool
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:36:44: warning: statement should be inside braces [readability-braces-around-statements]
+   36 |     if((timeWeight())>(other.timeWeight()))
+      |                                            ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:37:12: warning: redundant boolean literal in conditional return statement [readability-simplify-boolean-expr]
+   36 |     if((timeWeight())>(other.timeWeight()))
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     return (timeWeight())>(other.timeWeight())
+   37 |     return true;
+      |     ~~~~~~~^~~~~
+   38 |     else return false;
+      |     ~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:38:5: warning: do not use 'else' after 'return' [readability-else-after-return]
+   38 |     else return false;
+      |     ^~~~
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:38:9: warning: statement should be inside braces [readability-braces-around-statements]
+   38 |     else return false;
+      |         ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:40:17: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   40 | bool TimeStamp::operator<(const TimeStamp& other) const{
+      | ~~~~            ^                                      
+      | auto                                                    -> bool
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:41:44: warning: statement should be inside braces [readability-braces-around-statements]
+   41 |     if((timeWeight())<(other.timeWeight()))
+      |                                            ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:42:12: warning: redundant boolean literal in conditional return statement [readability-simplify-boolean-expr]
+   41 |     if((timeWeight())<(other.timeWeight()))
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     return (timeWeight())<(other.timeWeight())
+   42 |     return true;
+      |     ~~~~~~~^~~~~
+   43 |     else return false;
+      |     ~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:43:5: warning: do not use 'else' after 'return' [readability-else-after-return]
+   43 |     else return false;
+      |     ^~~~
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:43:9: warning: statement should be inside braces [readability-braces-around-statements]
+   43 |     else return false;
+      |         ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:45:17: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+   45 | bool TimeStamp::operator==(const TimeStamp& other) const{
+      | ~~~~            ^                                       
+      | auto                                                     -> bool
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:46:45: warning: statement should be inside braces [readability-braces-around-statements]
+   46 |     if((timeWeight())==(other.timeWeight()))
+      |                                             ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:47:12: warning: redundant boolean literal in conditional return statement [readability-simplify-boolean-expr]
+   46 |     if((timeWeight())==(other.timeWeight()))
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     return (timeWeight())==(other.timeWeight())
+   47 |     return true;
+      |     ~~~~~~~^~~~~
+   48 |     else return false;
+      |     ~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:48:5: warning: do not use 'else' after 'return' [readability-else-after-return]
+   48 |     else return false;
+      |     ^~~~
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:48:9: warning: statement should be inside braces [readability-braces-around-statements]
+   48 |     else return false;
+      |         ^
+note: this fix will not be applied because it overlaps with another fix
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:51:21: warning: 3 adjacent parameters of 'set' of similar type ('unsigned int') are easily swapped by mistake [bugprone-easily-swappable-parameters]
+   51 | void TimeStamp::set(unsigned int date,unsigned int month,unsigned int year)
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:51:34: note: the first parameter in the range is 'date'
+   51 | void TimeStamp::set(unsigned int date,unsigned int month,unsigned int year)
+      |                                  ^~~~
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/timestamp.cpp:51:71: note: the last parameter in the range is 'year'
+   51 | void TimeStamp::set(unsigned int date,unsigned int month,unsigned int year)
+      |                                                                       ^~~~
+Suppressed 18902 warnings (18902 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+
+
+---------------------------------------------------
+Analiziram fajl: ../OnlineBankingSystem/txn.cpp
+21488 warnings generated.
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/txn.cpp:24:22: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   24 |     rajdeep.drawLine(30);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/txn.cpp:25:36: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   25 |     std::cout<<"\tMINI-STATEMENT"<<std::endl;
+      |                                    ^~~~~~~~~
+      |                                    '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/txn.cpp:26:22: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   26 |     rajdeep.drawLine(30);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/txn.cpp:27:26: warning: 20 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   27 |     std::cout<<std::setw(20)<<"ID : "<<this->id<<std::endl
+      |                          ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/txn.cpp:27:50: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   27 |     std::cout<<std::setw(20)<<"ID : "<<this->id<<std::endl
+      |                                                  ^~~~~~~~~
+      |                                                  '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/txn.cpp:28:17: warning: 20 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   28 |     <<std::setw(20)<<"Name : "<<(this->cust).getName()<<std::endl
+      |                 ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/txn.cpp:28:57: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   28 |     <<std::setw(20)<<"Name : "<<(this->cust).getName()<<std::endl
+      |                                                         ^~~~~~~~~
+      |                                                         '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/txn.cpp:29:17: warning: 20 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   29 |     <<std::setw(20)<<"Txn Date : "<<(this->ts).toString()<<std::endl
+      |                 ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/txn.cpp:29:60: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   29 |     <<std::setw(20)<<"Txn Date : "<<(this->ts).toString()<<std::endl
+      |                                                            ^~~~~~~~~
+      |                                                            '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/txn.cpp:30:17: warning: 20 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   30 |     <<std::setw(20)<<"Amount : "<<(this->amount)<<std::endl
+      |                 ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/txn.cpp:30:51: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   30 |     <<std::setw(20)<<"Amount : "<<(this->amount)<<std::endl
+      |                                                   ^~~~~~~~~
+      |                                                   '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/txn.cpp:31:17: warning: 20 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   31 |     <<std::setw(20)<<"Transaction type: "<<((type=='d'||type=='D')?"Debit":"Credit")<<std::endl;
+      |                 ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/txn.cpp:31:87: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   31 |     <<std::setw(20)<<"Transaction type: "<<((type=='d'||type=='D')?"Debit":"Credit")<<std::endl;
+      |                                                                                       ^~~~~~~~~
+      |                                                                                       '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/txn.cpp:32:22: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   32 |     rajdeep.drawLine(30);
+      |                      ^
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/txn.cpp:33:38: warning: do not use 'std::endl' with streams; use '\n' instead [performance-avoid-endl]
+   33 |     std::cout<<"Have a nice day..."<<std::endl;
+      |                                      ^~~~~~~~~
+      |                                      '\n'
+/home/ana/Desktop/vs_najnovija_verzija/VerifikacijaSoftvera/clang/../OnlineBankingSystem/txn.cpp:34:22: warning: 30 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+   34 |     rajdeep.drawLine(30);
+      |                      ^
+Suppressed 21472 warnings (21472 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+
+
