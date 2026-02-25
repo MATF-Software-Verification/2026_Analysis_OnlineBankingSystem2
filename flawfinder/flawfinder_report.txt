@@ -1,0 +1,206 @@
+Flawfinder version 2.0.19, (C) 2001-2019 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 222
+Examining ../OnlineBankingSystem/controller.h
+Examining ../OnlineBankingSystem/main.cpp
+Examining ../OnlineBankingSystem/person.h
+Examining ../OnlineBankingSystem/employee.h
+Examining ../OnlineBankingSystem/timestamp.h
+Examining ../OnlineBankingSystem/rajdeep.cpp
+Examining ../OnlineBankingSystem/person.cpp
+Examining ../OnlineBankingSystem/credential.h
+Examining ../OnlineBankingSystem/utility.h
+Examining ../OnlineBankingSystem/txn.cpp
+Examining ../OnlineBankingSystem/rajdeep.h
+Examining ../OnlineBankingSystem/timestamp.cpp
+Examining ../OnlineBankingSystem/txn.h
+Examining ../OnlineBankingSystem/controller.cpp
+Examining ../OnlineBankingSystem/customer.cpp
+Examining ../OnlineBankingSystem/customer.h
+Examining ../OnlineBankingSystem/credential.cpp
+Examining ../OnlineBankingSystem/employee.cpp
+
+FINAL RESULTS:
+
+../OnlineBankingSystem/controller.cpp:30:5:  [4] (shell) system:
+  This causes a new program to execute and is difficult to use safely
+  (CWE-78). try using a library call that implements the same functionality
+  if available.
+../OnlineBankingSystem/controller.cpp:311:5:  [4] (shell) system:
+  This causes a new program to execute and is difficult to use safely
+  (CWE-78). try using a library call that implements the same functionality
+  if available.
+../OnlineBankingSystem/controller.cpp:851:5:  [4] (shell) system:
+  This causes a new program to execute and is difficult to use safely
+  (CWE-78). try using a library call that implements the same functionality
+  if available.
+../OnlineBankingSystem/credential.cpp:36:5:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+../OnlineBankingSystem/credential.h:32:9:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+../OnlineBankingSystem/person.cpp:22:5:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+../OnlineBankingSystem/person.cpp:23:5:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+../OnlineBankingSystem/person.cpp:26:5:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+../OnlineBankingSystem/person.cpp:48:10:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+../OnlineBankingSystem/person.h:43:9:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+../OnlineBankingSystem/person.h:44:9:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+../OnlineBankingSystem/person.h:45:9:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+../OnlineBankingSystem/controller.cpp:93:9:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+../OnlineBankingSystem/controller.cpp:179:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+../OnlineBankingSystem/controller.cpp:320:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+../OnlineBankingSystem/controller.cpp:351:9:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+../OnlineBankingSystem/controller.cpp:411:9:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+../OnlineBankingSystem/controller.cpp:569:9:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+../OnlineBankingSystem/controller.cpp:629:9:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+../OnlineBankingSystem/controller.cpp:815:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+../OnlineBankingSystem/controller.cpp:862:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+../OnlineBankingSystem/credential.h:26:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+../OnlineBankingSystem/person.h:30:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+../OnlineBankingSystem/person.h:31:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+../OnlineBankingSystem/person.h:34:5:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+../OnlineBankingSystem/controller.cpp:86:19:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+../OnlineBankingSystem/controller.cpp:126:19:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+../OnlineBankingSystem/controller.cpp:172:15:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+../OnlineBankingSystem/controller.cpp:331:15:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+../OnlineBankingSystem/controller.cpp:386:15:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+../OnlineBankingSystem/controller.cpp:452:15:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+../OnlineBankingSystem/controller.cpp:475:15:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+../OnlineBankingSystem/controller.cpp:503:15:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+../OnlineBankingSystem/controller.cpp:549:15:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+../OnlineBankingSystem/controller.cpp:604:15:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+../OnlineBankingSystem/controller.cpp:670:15:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+../OnlineBankingSystem/controller.cpp:694:15:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+../OnlineBankingSystem/controller.cpp:723:15:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+../OnlineBankingSystem/controller.cpp:766:15:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+../OnlineBankingSystem/controller.cpp:809:15:  [1] (buffer) read:
+  Check buffer boundaries if used in a loop including recursive loops
+  (CWE-120, CWE-20).
+../OnlineBankingSystem/credential.h:29:9:  [1] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant character.
+
+ANALYSIS SUMMARY:
+
+Hits = 41
+Lines analyzed = 1542 in approximately 0.04 seconds (39147 lines/second)
+Physical Source Lines of Code (SLOC) = 1207
+Hits@level = [0]   0 [1]  16 [2]  13 [3]   0 [4]  12 [5]   0
+Hits@level+ = [0+]  41 [1+]  41 [2+]  25 [3+]  12 [4+]  12 [5+]   0
+Hits/KSLOC@level+ = [0+] 33.9685 [1+] 33.9685 [2+] 20.7125 [3+] 9.942 [4+] 9.942 [5+]   0
+Dot directories skipped = 1 (--followdotdir overrides)
+Minimum risk level = 1
+
+Not every hit is necessarily a security vulnerability.
+You can inhibit a report by adding a comment in this form:
+// flawfinder: ignore
+Make *sure* it's a false positive!
+You can use the option --neverignore to show these.
+
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming HOWTO'
+(https://dwheeler.com/secure-programs) for more information.
