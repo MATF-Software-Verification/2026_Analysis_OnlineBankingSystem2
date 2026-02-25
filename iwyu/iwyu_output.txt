@@ -1,0 +1,215 @@
+=== Započinjem Include-What-You-Use analizu ===
+---------------------------------------------------
+Analiziram zavisnosti za: ../OnlineBankingSystem/controller.cpp
+
+../OnlineBankingSystem/controller.h should add these lines:
+class Customer;
+
+../OnlineBankingSystem/controller.h should remove these lines:
+- #include <iostream>  // lines 19-19
+- #include "customer.h"  // lines 20-20
+
+The full include-list for ../OnlineBankingSystem/controller.h:
+class Customer;
+---
+
+../OnlineBankingSystem/controller.cpp should add these lines:
+#include <string.h>      // for strcmp
+#include <string>        // for basic_string, operator<<, operator==, operat...
+#include "timestamp.h"   // for TimeStamp
+
+../OnlineBankingSystem/controller.cpp should remove these lines:
+
+The full include-list for ../OnlineBankingSystem/controller.cpp:
+#include "controller.h"
+#include <string.h>      // for strcmp
+#include <algorithm>     // for sort
+#include <cstdlib>       // for system, exit
+#include <fstream>       // for basic_fstream
+#include <iostream>      // for basic_ostream, operator<<, char_traits, cout
+#include <string>        // for basic_string, operator<<, operator==, operat...
+#include <vector>        // for vector, allocator
+#include "credential.h"  // for Credential
+#include "customer.h"    // for Customer
+#include "employee.h"    // for Employee
+#include "rajdeep.h"     // for Rajdeep
+#include "timestamp.h"   // for TimeStamp
+---
+
+
+---------------------------------------------------
+Analiziram zavisnosti za: ../OnlineBankingSystem/credential.cpp
+
+../OnlineBankingSystem/credential.h should add these lines:
+
+../OnlineBankingSystem/credential.h should remove these lines:
+- #include <iostream>  // lines 18-18
+
+The full include-list for ../OnlineBankingSystem/credential.h:
+#include <cstring>  // for strcpy
+---
+
+(../OnlineBankingSystem/credential.cpp has correct #includes/fwd-decls)
+
+
+---------------------------------------------------
+Analiziram zavisnosti za: ../OnlineBankingSystem/customer.cpp
+
+../OnlineBankingSystem/customer.h should add these lines:
+#include "timestamp.h"  // for TimeStamp
+
+../OnlineBankingSystem/customer.h should remove these lines:
+- #include <iostream>  // lines 18-18
+
+The full include-list for ../OnlineBankingSystem/customer.h:
+#include "person.h"     // for Person
+#include "timestamp.h"  // for TimeStamp
+---
+
+../OnlineBankingSystem/customer.cpp should add these lines:
+#include <iostream>  // for char_traits, basic_ostream, endl, operator<<
+#include <string>    // for operator<<, basic_string
+
+../OnlineBankingSystem/customer.cpp should remove these lines:
+
+The full include-list for ../OnlineBankingSystem/customer.cpp:
+#include "customer.h"
+#include <iostream>  // for char_traits, basic_ostream, endl, operator<<
+#include <string>    // for operator<<, basic_string
+---
+
+
+---------------------------------------------------
+Analiziram zavisnosti za: ../OnlineBankingSystem/employee.cpp
+
+../OnlineBankingSystem/employee.h should add these lines:
+
+../OnlineBankingSystem/employee.h should remove these lines:
+- #include <iostream>  // lines 18-18
+
+The full include-list for ../OnlineBankingSystem/employee.h:
+#include "person.h"     // for Person
+#include "timestamp.h"  // for TimeStamp
+---
+
+../OnlineBankingSystem/employee.cpp should add these lines:
+#include <string>    // for operator<<, basic_string
+
+../OnlineBankingSystem/employee.cpp should remove these lines:
+
+The full include-list for ../OnlineBankingSystem/employee.cpp:
+#include "employee.h"
+#include <iostream>  // for char_traits, basic_ostream, endl, operator<<
+#include <string>    // for operator<<, basic_string
+---
+
+
+---------------------------------------------------
+Analiziram zavisnosti za: ../OnlineBankingSystem/main.cpp
+
+../OnlineBankingSystem/main.cpp should add these lines:
+#include "controller.h"  // for Controller
+
+../OnlineBankingSystem/main.cpp should remove these lines:
+- #include "utility.h"  // lines 3-3
+
+The full include-list for ../OnlineBankingSystem/main.cpp:
+#include <cstdlib>       // for EXIT_SUCCESS
+#include <iostream>      // for std
+#include "controller.h"  // for Controller
+---
+
+
+---------------------------------------------------
+Analiziram zavisnosti za: ../OnlineBankingSystem/person.cpp
+
+../OnlineBankingSystem/person.h should add these lines:
+
+../OnlineBankingSystem/person.h should remove these lines:
+- #include <iostream>  // lines 18-18
+
+The full include-list for ../OnlineBankingSystem/person.h:
+#include <cstring>      // for strcpy
+#include "timestamp.h"  // for TimeStamp
+---
+
+(../OnlineBankingSystem/person.cpp has correct #includes/fwd-decls)
+
+
+---------------------------------------------------
+Analiziram zavisnosti za: ../OnlineBankingSystem/rajdeep.cpp
+
+../OnlineBankingSystem/rajdeep.h should add these lines:
+#include <string>  // for string
+
+../OnlineBankingSystem/rajdeep.h should remove these lines:
+- #include <iostream>  // lines 18-18
+
+The full include-list for ../OnlineBankingSystem/rajdeep.h:
+#include <string>  // for string
+---
+
+../OnlineBankingSystem/rajdeep.cpp should add these lines:
+#include <iostream>  // for basic_ostream, cout, operator<<, endl, basic_ios
+
+../OnlineBankingSystem/rajdeep.cpp should remove these lines:
+
+The full include-list for ../OnlineBankingSystem/rajdeep.cpp:
+#include "rajdeep.h"
+#include <iostream>  // for basic_ostream, cout, operator<<, endl, basic_ios
+---
+
+
+---------------------------------------------------
+Analiziram zavisnosti za: ../OnlineBankingSystem/timestamp.cpp
+
+../OnlineBankingSystem/timestamp.h should add these lines:
+#include <string>  // for string
+
+../OnlineBankingSystem/timestamp.h should remove these lines:
+- #include <iostream>  // lines 18-18
+
+The full include-list for ../OnlineBankingSystem/timestamp.h:
+#include <string>  // for string
+---
+
+../OnlineBankingSystem/timestamp.cpp should add these lines:
+
+../OnlineBankingSystem/timestamp.cpp should remove these lines:
+- #include <cstring>  // lines 20-20
+
+The full include-list for ../OnlineBankingSystem/timestamp.cpp:
+#include "timestamp.h"
+#include <iostream>  // for char_traits, basic_ostream, operator<<, stringst...
+#include <sstream>   // for basic_stringstream
+---
+
+
+---------------------------------------------------
+Analiziram zavisnosti za: ../OnlineBankingSystem/txn.cpp
+
+../OnlineBankingSystem/txn.h should add these lines:
+
+../OnlineBankingSystem/txn.h should remove these lines:
+- #include "rajdeep.h"  // lines 19-19
+
+The full include-list for ../OnlineBankingSystem/txn.h:
+#include "customer.h"   // for Customer
+#include "timestamp.h"  // for TimeStamp
+---
+
+../OnlineBankingSystem/txn.cpp should add these lines:
+#include <string>     // for operator<<, basic_string
+#include "rajdeep.h"  // for Rajdeep
+
+../OnlineBankingSystem/txn.cpp should remove these lines:
+
+The full include-list for ../OnlineBankingSystem/txn.cpp:
+#include "txn.h"
+#include <iomanip>    // for operator<<, setw
+#include <iostream>   // for basic_ostream, char_traits, operator<<, endl, cout
+#include <string>     // for operator<<, basic_string
+#include "rajdeep.h"  // for Rajdeep
+---
+
+
