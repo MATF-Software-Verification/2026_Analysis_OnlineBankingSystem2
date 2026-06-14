@@ -1,0 +1,53 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.0.3, pluggy-1.6.0
+rootdir: /home/seminarski
+plugins: cov-7.1.0
+collected 64 items
+
+pytest-unit/test_board.py ....                                           [  6%]
+pytest-unit/test_snake.py .........................................      [ 70%]
+pytest-integration/test_game.py ...................<unknown>:20: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:21: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:22: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:23: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:24: SyntaxWarning: invalid escape sequence '\_'
+/home/seminarski/snake/game_state_screens.py:20: SyntaxWarning: invalid escape sequence '\ '
+  start_screen.addstr(8, 7,  " / _____\ |   \  | |     / \     | | / /  | _____| ")
+/home/seminarski/snake/game_state_screens.py:21: SyntaxWarning: invalid escape sequence '\ '
+  start_screen.addstr(9, 7,  " \ \___   | |\ \ | |    /___\    | |/ /   | |___   ")
+/home/seminarski/snake/game_state_screens.py:22: SyntaxWarning: invalid escape sequence '\_'
+  start_screen.addstr(10, 7, "  \__  \  | | \ \| |   / \_/ \   |  _ \   | ____|  ")
+/home/seminarski/snake/game_state_screens.py:23: SyntaxWarning: invalid escape sequence '\ '
+  start_screen.addstr(11, 7, " ____\  \ | |  \   |  /  ___  \  | | \ \  | |____  ")
+/home/seminarski/snake/game_state_screens.py:24: SyntaxWarning: invalid escape sequence '\_'
+  start_screen.addstr(12, 7, " \______/ |_|   \__| /__/   \__\ |_|  \_\ |______| ")
+<unknown>:20: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:21: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:22: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:23: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:24: SyntaxWarning: invalid escape sequence '\_'
+/home/seminarski/snake/game_state_screens.py:20: SyntaxWarning: invalid escape sequence '\ '
+  start_screen.addstr(8, 7,  " / _____\ |   \  | |     / \     | | / /  | _____| ")
+/home/seminarski/snake/game_state_screens.py:21: SyntaxWarning: invalid escape sequence '\ '
+  start_screen.addstr(9, 7,  " \ \___   | |\ \ | |    /___\    | |/ /   | |___   ")
+/home/seminarski/snake/game_state_screens.py:22: SyntaxWarning: invalid escape sequence '\_'
+  start_screen.addstr(10, 7, "  \__  \  | | \ \| |   / \_/ \   |  _ \   | ____|  ")
+/home/seminarski/snake/game_state_screens.py:23: SyntaxWarning: invalid escape sequence '\ '
+  start_screen.addstr(11, 7, " ____\  \ | |  \   |  /  ___  \  | | \ \  | |____  ")
+/home/seminarski/snake/game_state_screens.py:24: SyntaxWarning: invalid escape sequence '\_'
+  start_screen.addstr(12, 7, " \______/ |_|   \__| /__/   \__\ |_|  \_\ |______| ")
+                      [100%]
+
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.3-final-0 ________________
+
+Name                          Stmts   Miss  Cover   Missing
+-----------------------------------------------------------
+snake/board.py                   31      0   100%
+snake/game.py                    66      1    98%   54
+snake/game_state_screens.py      36     36     0%   11-66
+snake/snake.py                  127      0   100%
+snake/snake_main.py              16     16     0%   10-32
+-----------------------------------------------------------
+TOTAL                           276     53    81%
+============================== 64 passed in 0.19s ==============================

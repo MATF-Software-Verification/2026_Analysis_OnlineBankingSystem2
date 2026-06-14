@@ -1,0 +1,142 @@
+=== Pokretanje jedinicnih testova (pytest) ===
+Datum: Sat May 23 19:33:48 UTC 2026
+
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.0.3, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/seminarski
+plugins: cov-7.1.0
+collecting ... collected 45 items
+
+pytest-unit/test_board.py::test_fruit_initial_position PASSED            [  2%]
+pytest-unit/test_board.py::test_display_fruit PASSED                     [  4%]
+pytest-unit/test_board.py::test_update_fruit_position_empty_board PASSED [  6%]
+pytest-unit/test_board.py::test_update_fruit_enters_else PASSED          [  8%]
+pytest-unit/test_snake.py::test_snake_initial_position PASSED            [ 11%]
+pytest-unit/test_snake.py::test_grow_snake PASSED                        [ 13%]
+pytest-unit/test_snake.py::test_quit_key PASSED                          [ 15%]
+pytest-unit/test_snake.py::test_jump_top_wall PASSED                     [ 17%]
+pytest-unit/test_snake.py::test_jump_top_wall_right PASSED               [ 20%]
+pytest-unit/test_snake.py::test_jump_bottom_wall PASSED                  [ 22%]
+pytest-unit/test_snake.py::test_jump_bottom_wall_left PASSED             [ 24%]
+pytest-unit/test_snake.py::test_jump_left_wall PASSED                    [ 26%]
+pytest-unit/test_snake.py::test_jump_left_wall_down PASSED               [ 28%]
+pytest-unit/test_snake.py::test_jump_right_wall PASSED                   [ 31%]
+pytest-unit/test_snake.py::test_jump_right_wall_up PASSED                [ 33%]
+pytest-unit/test_snake.py::test_back_on_self_up_down PASSED              [ 35%]
+pytest-unit/test_snake.py::test_back_on_self_down_up PASSED              [ 37%]
+pytest-unit/test_snake.py::test_back_on_self_left_right PASSED           [ 40%]
+pytest-unit/test_snake.py::test_back_on_self_right_left PASSED           [ 42%]
+pytest-unit/test_snake.py::test_back_on_self_false_case PASSED           [ 44%]
+pytest-unit/test_snake.py::test_tail_collision_ignored_when_reverse PASSED [ 46%]
+pytest-unit/test_snake.py::test_check_tail_collision_true PASSED         [ 48%]
+pytest-unit/test_snake.py::test_check_tail_collision_all_keys[119] PASSED [ 51%]
+pytest-unit/test_snake.py::test_check_tail_collision_all_keys[115] PASSED [ 53%]
+pytest-unit/test_snake.py::test_check_tail_collision_all_keys[97] PASSED [ 55%]
+pytest-unit/test_snake.py::test_check_tail_collision_all_keys[100] PASSED [ 57%]
+pytest-unit/test_snake.py::test_set_snake_head_x_y PASSED                [ 60%]
+pytest-unit/test_snake.py::test_move_up PASSED                           [ 62%]
+pytest-unit/test_snake.py::test_move_down PASSED                         [ 64%]
+pytest-unit/test_snake.py::test_move_left PASSED                         [ 66%]
+pytest-unit/test_snake.py::test_display_snake_erases_tail PASSED         [ 68%]
+pytest-unit/test_snake.py::test_move_right_via_move_position PASSED      [ 71%]
+pytest-unit/test_snake.py::test_quit_key_sets_game_over PASSED           [ 73%]
+pytest-unit/test_snake.py::test_invalid_input_follows_last_direction PASSED [ 75%]
+pytest-unit/test_snake.py::test_pause_key_does_nothing PASSED            [ 77%]
+pytest-unit/test_snake.py::test_fallback_left PASSED                     [ 80%]
+pytest-unit/test_snake.py::test_fallback_down PASSED                     [ 82%]
+pytest-unit/test_snake.py::test_fallback_right PASSED                    [ 84%]
+pytest-unit/test_snake.py::test_move_up_conflict PASSED                  [ 86%]
+pytest-unit/test_snake.py::test_move_left_conflict PASSED                [ 88%]
+pytest-unit/test_snake.py::test_move_down_conflict PASSED                [ 91%]
+pytest-unit/test_snake.py::test_move_right_conflict PASSED               [ 93%]
+pytest-unit/test_snake.py::test_move_up_no_conflict PASSED               [ 95%]
+pytest-unit/test_snake.py::test_move_left_no_conflict PASSED             [ 97%]
+pytest-unit/test_snake.py::test_move_down_no_conflict PASSED             [100%]<unknown>:20: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:21: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:22: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:23: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:24: SyntaxWarning: invalid escape sequence '\_'
+/home/seminarski/snake/game_state_screens.py:20: SyntaxWarning: invalid escape sequence '\ '
+  start_screen.addstr(8, 7,  " / _____\ |   \  | |     / \     | | / /  | _____| ")
+/home/seminarski/snake/game_state_screens.py:21: SyntaxWarning: invalid escape sequence '\ '
+  start_screen.addstr(9, 7,  " \ \___   | |\ \ | |    /___\    | |/ /   | |___   ")
+/home/seminarski/snake/game_state_screens.py:22: SyntaxWarning: invalid escape sequence '\_'
+  start_screen.addstr(10, 7, "  \__  \  | | \ \| |   / \_/ \   |  _ \   | ____|  ")
+/home/seminarski/snake/game_state_screens.py:23: SyntaxWarning: invalid escape sequence '\ '
+  start_screen.addstr(11, 7, " ____\  \ | |  \   |  /  ___  \  | | \ \  | |____  ")
+/home/seminarski/snake/game_state_screens.py:24: SyntaxWarning: invalid escape sequence '\_'
+  start_screen.addstr(12, 7, " \______/ |_|   \__| /__/   \__\ |_|  \_\ |______| ")
+<unknown>:20: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:21: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:22: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:23: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:24: SyntaxWarning: invalid escape sequence '\_'
+/home/seminarski/snake/game_state_screens.py:20: SyntaxWarning: invalid escape sequence '\ '
+  start_screen.addstr(8, 7,  " / _____\ |   \  | |     / \     | | / /  | _____| ")
+/home/seminarski/snake/game_state_screens.py:21: SyntaxWarning: invalid escape sequence '\ '
+  start_screen.addstr(9, 7,  " \ \___   | |\ \ | |    /___\    | |/ /   | |___   ")
+/home/seminarski/snake/game_state_screens.py:22: SyntaxWarning: invalid escape sequence '\_'
+  start_screen.addstr(10, 7, "  \__  \  | | \ \| |   / \_/ \   |  _ \   | ____|  ")
+/home/seminarski/snake/game_state_screens.py:23: SyntaxWarning: invalid escape sequence '\ '
+  start_screen.addstr(11, 7, " ____\  \ | |  \   |  /  ___  \  | | \ \  | |____  ")
+/home/seminarski/snake/game_state_screens.py:24: SyntaxWarning: invalid escape sequence '\_'
+  start_screen.addstr(12, 7, " \______/ |_|   \__| /__/   \__\ |_|  \_\ |______| ")
+<unknown>:20: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:21: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:22: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:23: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:24: SyntaxWarning: invalid escape sequence '\_'
+/home/seminarski/snake/game_state_screens.py:20: SyntaxWarning: invalid escape sequence '\ '
+  start_screen.addstr(8, 7,  " / _____\ |   \  | |     / \     | | / /  | _____| ")
+/home/seminarski/snake/game_state_screens.py:21: SyntaxWarning: invalid escape sequence '\ '
+  start_screen.addstr(9, 7,  " \ \___   | |\ \ | |    /___\    | |/ /   | |___   ")
+/home/seminarski/snake/game_state_screens.py:22: SyntaxWarning: invalid escape sequence '\_'
+  start_screen.addstr(10, 7, "  \__  \  | | \ \| |   / \_/ \   |  _ \   | ____|  ")
+/home/seminarski/snake/game_state_screens.py:23: SyntaxWarning: invalid escape sequence '\ '
+  start_screen.addstr(11, 7, " ____\  \ | |  \   |  /  ___  \  | | \ \  | |____  ")
+/home/seminarski/snake/game_state_screens.py:24: SyntaxWarning: invalid escape sequence '\_'
+  start_screen.addstr(12, 7, " \______/ |_|   \__| /__/   \__\ |_|  \_\ |______| ")
+<unknown>:20: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:21: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:22: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:23: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:24: SyntaxWarning: invalid escape sequence '\_'
+/home/seminarski/snake/game_state_screens.py:20: SyntaxWarning: invalid escape sequence '\ '
+  start_screen.addstr(8, 7,  " / _____\ |   \  | |     / \     | | / /  | _____| ")
+/home/seminarski/snake/game_state_screens.py:21: SyntaxWarning: invalid escape sequence '\ '
+  start_screen.addstr(9, 7,  " \ \___   | |\ \ | |    /___\    | |/ /   | |___   ")
+/home/seminarski/snake/game_state_screens.py:22: SyntaxWarning: invalid escape sequence '\_'
+  start_screen.addstr(10, 7, "  \__  \  | | \ \| |   / \_/ \   |  _ \   | ____|  ")
+/home/seminarski/snake/game_state_screens.py:23: SyntaxWarning: invalid escape sequence '\ '
+  start_screen.addstr(11, 7, " ____\  \ | |  \   |  /  ___  \  | | \ \  | |____  ")
+/home/seminarski/snake/game_state_screens.py:24: SyntaxWarning: invalid escape sequence '\_'
+  start_screen.addstr(12, 7, " \______/ |_|   \__| /__/   \__\ |_|  \_\ |______| ")
+<unknown>:20: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:21: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:22: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:23: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:24: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:20: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:21: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:22: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:23: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:24: SyntaxWarning: invalid escape sequence '\_'
+
+
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.3-final-0 ________________
+
+Name                          Stmts   Miss  Cover   Missing
+-----------------------------------------------------------
+snake/board.py                   31      2    94%   61, 64
+snake/game.py                    66     66     0%   10-126
+snake/game_state_screens.py      36     36     0%   11-66
+snake/snake.py                  127      0   100%
+snake/snake_main.py              16     16     0%   10-32
+-----------------------------------------------------------
+TOTAL                           276    120    57%
+Coverage HTML written to dir /home/seminarski/pytest-unit/coverage_html
+============================== 45 passed in 0.39s ==============================
+
+=== Testovi zavrseni ===
