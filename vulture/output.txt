@@ -1,0 +1,10 @@
+C:\Users\Ana\Desktop\seminarski_sa_readme\seminarski\snake\game_state_screens.py:20: SyntaxWarning: invalid escape sequence '\ '
+  start_screen.addstr(8, 7,  " / _____\ |   \  | |     / \     | | / /  | _____| ")
+C:\Users\Ana\Desktop\seminarski_sa_readme\seminarski\snake\game_state_screens.py:21: SyntaxWarning: invalid escape sequence '\ '
+  start_screen.addstr(9, 7,  " \ \___   | |\ \ | |    /___\    | |/ /   | |___   ")
+C:\Users\Ana\Desktop\seminarski_sa_readme\seminarski\snake\game_state_screens.py:22: SyntaxWarning: invalid escape sequence '\_'
+  start_screen.addstr(10, 7, "  \__  \  | | \ \| |   / \_/ \   |  _ \   | ____|  ")
+C:\Users\Ana\Desktop\seminarski_sa_readme\seminarski\snake\game_state_screens.py:23: SyntaxWarning: invalid escape sequence '\ '
+  start_screen.addstr(11, 7, " ____\  \ | |  \   |  /  ___  \  | | \ \  | |____  ")
+C:\Users\Ana\Desktop\seminarski_sa_readme\seminarski\snake\game_state_screens.py:24: SyntaxWarning: invalid escape sequence '\_'
+  start_screen.addstr(12, 7, " \______/ |_|   \__| /__/   \__\ |_|  \_\ |______| ")

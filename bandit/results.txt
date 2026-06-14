@@ -1,0 +1,107 @@
+[main]	INFO	profile include tests: None
+[main]	INFO	profile exclude tests: None
+[main]	INFO	cli include tests: None
+[main]	INFO	cli exclude tests: None
+[main]	INFO	running on Python 3.12.8
+[warnings]	WARNING	invalid escape sequence '\ '
+
+[warnings]	WARNING	invalid escape sequence '\ '
+
+[warnings]	WARNING	invalid escape sequence '\_'
+
+[warnings]	WARNING	invalid escape sequence '\ '
+
+[warnings]	WARNING	invalid escape sequence '\_'
+
+Run started:2026-06-14 09:28:34.341797+00:00
+Files in scope (5):
+	C:/Users/Ana/Desktop/seminarski_sa_readme/seminarski/bandit/../snake\board.py (score: {SEVERITY: 18, CONFIDENCE: 60})
+	C:/Users/Ana/Desktop/seminarski_sa_readme/seminarski/bandit/../snake\game.py (score: {SEVERITY: 0, CONFIDENCE: 0})
+	C:/Users/Ana/Desktop/seminarski_sa_readme/seminarski/bandit/../snake\game_state_screens.py (score: {SEVERITY: 0, CONFIDENCE: 0})
+	C:/Users/Ana/Desktop/seminarski_sa_readme/seminarski/bandit/../snake\snake.py (score: {SEVERITY: 0, CONFIDENCE: 0})
+	C:/Users/Ana/Desktop/seminarski_sa_readme/seminarski/bandit/../snake\snake_main.py (score: {SEVERITY: 0, CONFIDENCE: 0})
+Files excluded (4):
+	C:/Users/Ana/Desktop/seminarski_sa_readme/seminarski/bandit/../snake\.git
+	C:/Users/Ana/Desktop/seminarski_sa_readme/seminarski/bandit/../snake\.gitignore
+	C:/Users/Ana/Desktop/seminarski_sa_readme/seminarski/bandit/../snake\LICENSE
+	C:/Users/Ana/Desktop/seminarski_sa_readme/seminarski/bandit/../snake\README.md
+
+Test results:
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random
+   Location: C:/Users/Ana/Desktop/seminarski_sa_readme/seminarski/bandit/../snake\board.py:19:22
+18	
+19	    fruit_position = [randint(1, BOARD_WIDTH - 2), randint(1, BOARD_HEIGHT - 2)]
+20	
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random
+   Location: C:/Users/Ana/Desktop/seminarski_sa_readme/seminarski/bandit/../snake\board.py:19:51
+18	
+19	    fruit_position = [randint(1, BOARD_WIDTH - 2), randint(1, BOARD_HEIGHT - 2)]
+20	
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random
+   Location: C:/Users/Ana/Desktop/seminarski_sa_readme/seminarski/bandit/../snake\board.py:38:29
+37	        while not fruit_drawn:
+38	            self.set_fruit_y(randint(1, self.BOARD_HEIGHT - 2))
+39	            self.set_fruit_x(randint(1, self.BOARD_WIDTH - 2))
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random
+   Location: C:/Users/Ana/Desktop/seminarski_sa_readme/seminarski/bandit/../snake\board.py:39:29
+38	            self.set_fruit_y(randint(1, self.BOARD_HEIGHT - 2))
+39	            self.set_fruit_x(randint(1, self.BOARD_WIDTH - 2))
+40	
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random
+   Location: C:/Users/Ana/Desktop/seminarski_sa_readme/seminarski/bandit/../snake\board.py:45:33
+44	            else:
+45	                self.set_fruit_y(randint(1, self.BOARD_HEIGHT - 2))
+46	                self.set_fruit_x(randint(1, self.BOARD_WIDTH - 2))
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random
+   Location: C:/Users/Ana/Desktop/seminarski_sa_readme/seminarski/bandit/../snake\board.py:46:33
+45	                self.set_fruit_y(randint(1, self.BOARD_HEIGHT - 2))
+46	                self.set_fruit_x(randint(1, self.BOARD_WIDTH - 2))
+47	
+
+--------------------------------------------------
+
+Code scanned:
+	Total lines of code: 386
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 6
+		Medium: 0
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 6
+Files skipped (0):

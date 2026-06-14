@@ -1,0 +1,337 @@
+--- /home/seminarski/black/../snake/board.py	2026-05-23 18:48:52.401540+00:00
++++ /home/seminarski/black/../snake/board.py	2026-05-23 18:49:37.923817+00:00
+@@ -5,17 +5,18 @@
+ 
+ Description:  The Board class for terminal-based snake clone
+ 
+ """
+ 
+-from random import randint                     # For RNG fruit placement
++from random import randint  # For RNG fruit placement
+ 
+ 
+ class Board:
+     """Represents the game board. Class handles the board and the fruit"""
+-    BOARD_WIDTH = 60       # X values
+-    BOARD_HEIGHT = 20      # Y values
++
++    BOARD_WIDTH = 60  # X values
++    BOARD_HEIGHT = 20  # Y values
+     FRUIT_CHAR = "@"
+ 
+     fruit_position = [randint(1, BOARD_WIDTH - 2), randint(1, BOARD_HEIGHT - 2)]
+ 
+     def __init__(self, window):
+@@ -24,11 +25,13 @@
+         """
+         self.window = window
+ 
+     def display_fruit(self):
+         """Draws the fruit to the screen based on x and y coordinates"""
+-        self.window.addch(self.fruit_position[1], self.fruit_position[0], self.FRUIT_CHAR)
++        self.window.addch(
++            self.fruit_position[1], self.fruit_position[0], self.FRUIT_CHAR
++        )
+ 
+     def update_fruit_position(self):
+         """
+         Ensures that the new fruit coordinates are an empty coordinate and not part of the snake
+         Generates a random fruit position after eating it and updates the position variables
+would reformat /home/seminarski/black/../snake/board.py
+--- /home/seminarski/black/../snake/game.py	2026-05-23 18:48:52.401540+00:00
++++ /home/seminarski/black/../snake/game.py	2026-05-23 18:49:37.979475+00:00
+@@ -5,11 +5,11 @@
+ 
+ Description:  The main Game class for terminal-based snake clone
+ 
+ """
+ 
+-import curses                                  # For terminal control
++import curses  # For terminal control
+ from board import Board
+ from snake import Snake
+ 
+ 
+ class Game:
+@@ -26,15 +26,17 @@
+         """
+         :param mode: bool that corresponds to the game type the user selects, if True the snake can pass through the
+         walls if False the game is over when the snake hits the wall
+         """
+         self.window = curses.newwin(20, 60, 0, 10)  # Creates window
+-        self.window.border(0)                       # Draws border by default
++        self.window.border(0)  # Draws border by default
+         self.pass_through_walls = mode
+ 
+         self.board = Board(self.window)
+-        self.snake = Snake(self.window, self.board.get_board_width(), self.board.get_board_height())
++        self.snake = Snake(
++            self.window, self.board.get_board_width(), self.board.get_board_height()
++        )
+ 
+     def run_game(self):
+         """
+         Run_game is the main gameplay function that calls the functions necessary to run the game loop.
+         Functions are called in specific order to ensure correct gameplay
+@@ -42,31 +44,35 @@
+         self.window.addstr(19, 49, "Score:" + str(self.score))
+         self.window.addstr(0, 28, "SNAKE")
+ 
+         self.board.display_fruit()
+         self.snake.display_snake()
+-        self.snake.move_position()               # Gets user input for movement
++        self.snake.move_position()  # Gets user input for movement
+         self.check_fruit_collision()
+         self.snake.check_tail_collision()
+-        self.set_game_over()                     # Checks if the snake class signaled a game over
++        self.set_game_over()  # Checks if the snake class signaled a game over
+         if not self.pass_through_walls:
+             self.game_over_if_wall_hit()
+         else:
+             self.pass_through_if_wall_hit()
+ 
+-        self.snake.jump_snake_position()         # Fixes the game crashing bug where you can get stuck in the wall
++        self.snake.jump_snake_position()  # Fixes the game crashing bug where you can get stuck in the wall
+ 
+-        self.window.border(0)                    # Redraws border, passing through the wall will break border without
++        self.window.border(
++            0
++        )  # Redraws border, passing through the wall will break border without
+         self.window.timeout(self.current_game_speed)
+ 
+     def check_fruit_collision(self):
+         """
+         Function contains the collision logic for the fruit, also ensures
+         that the fruit is not redrawn in an occupied coordinate
+         """
+-        if self.snake.get_snake_head_x() == self.board.get_fruit_x() and \
+-                        self.snake.get_snake_head_y() == self.board.get_fruit_y():
++        if (
++            self.snake.get_snake_head_x() == self.board.get_fruit_x()
++            and self.snake.get_snake_head_y() == self.board.get_fruit_y()
++        ):
+             self.score += self.SCORE_INCREASE
+             self.fruit_eaten += 1
+             self.snake.grow_snake()
+             self.increase_game_speed()
+             self.board.update_fruit_position()
+@@ -92,12 +98,14 @@
+ 
+     def game_over_if_wall_hit(self):
+         """
+         Gameplay option: Game over when walls are hit by snake head.
+         """
+-        if self.snake.get_snake_head_y() == self.board.get_board_height() - 1 or \
+-                        self.snake.get_snake_head_x() == self.board.get_board_width() - 1:
++        if (
++            self.snake.get_snake_head_y() == self.board.get_board_height() - 1
++            or self.snake.get_snake_head_x() == self.board.get_board_width() - 1
++        ):
+             self.game_over = True  # Y wall hit
+ 
+         if self.snake.get_snake_head_x() == 0 or self.snake.get_snake_head_y() == 0:
+             self.game_over = True  # X wall hit
+ 
+would reformat /home/seminarski/black/../snake/game.py
+--- /home/seminarski/black/../snake/game_state_screens.py	2026-05-23 18:48:52.401540+00:00
++++ /home/seminarski/black/../snake/game_state_screens.py	2026-05-23 18:49:38.006212+00:00
+@@ -14,13 +14,13 @@
+ def draw_start_window():
+     """
+     Draws the main logo to the screen
+     """
+     start_screen = curses.newwin(20, 60, 0, 8)
+-    start_screen.addstr(7, 7,  "  ______   ___    _       _       _   __   ______  ")
+-    start_screen.addstr(8, 7,  " / _____\ |   \  | |     / \     | | / /  | _____| ")
+-    start_screen.addstr(9, 7,  " \ \___   | |\ \ | |    /___\    | |/ /   | |___   ")
++    start_screen.addstr(7, 7, "  ______   ___    _       _       _   __   ______  ")
++    start_screen.addstr(8, 7, " / _____\ |   \  | |     / \     | | / /  | _____| ")
++    start_screen.addstr(9, 7, " \ \___   | |\ \ | |    /___\    | |/ /   | |___   ")
+     start_screen.addstr(10, 7, "  \__  \  | | \ \| |   / \_/ \   |  _ \   | ____|  ")
+     start_screen.addstr(11, 7, " ____\  \ | |  \   |  /  ___  \  | | \ \  | |____  ")
+     start_screen.addstr(12, 7, " \______/ |_|   \__| /__/   \__\ |_|  \_\ |______| ")
+ 
+     start_screen.addstr(15, 7, "               Press any key to play               ")
+@@ -34,11 +34,11 @@
+     """
+     Draws the game type option and choices to the screen
+     :return: bool based on the game type selection
+     """
+     option_screen = curses.newwin(20, 60, 0, 8)
+-    option_screen.addstr(7, 24,  "Select Game Mode")
++    option_screen.addstr(7, 24, "Select Game Mode")
+     option_screen.addstr(12, 13, "(1) Solid Walls    (2) Pass Through Walls")
+     key_pressed = None
+     while True:
+         key_pressed = option_screen.getch()
+         if key_pressed == ord("1") or key_pressed == ord("2"):
+@@ -46,11 +46,10 @@
+     curses.endwin()
+     if key_pressed == ord("1"):
+         return False
+     else:
+         return True
+-
+ 
+ 
+ def draw_game_over_window(score):
+     """
+     Draws the game over message and the user's final score onto the screen
+@@ -62,7 +61,5 @@
+     game_over_screen.addstr(15, 17, "Press any key to continue")
+     while True:
+         if game_over_screen.getch() is not None:
+             break
+     curses.endwin()
+-    
+-
+would reformat /home/seminarski/black/../snake/game_state_screens.py
+--- /home/seminarski/black/../snake/snake.py	2026-05-23 18:48:52.401540+00:00
++++ /home/seminarski/black/../snake/snake.py	2026-05-23 18:49:38.124191+00:00
+@@ -8,10 +8,11 @@
+ """
+ 
+ 
+ class Snake:
+     """Class represents the snake"""
++
+     UP_KEY = ord("w")
+     DOWN_KEY = ord("s")
+     LEFT_KEY = ord("a")
+     RIGHT_KEY = ord("d")
+     QUIT_KEY = ord("q")
+@@ -103,29 +104,41 @@
+         end_of_snake = self.snake_body[-1][:]
+         for i in range(len(self.snake_body) - 1, 0, -1):
+             self.snake_body[i] = self.snake_body[i - 1]
+ 
+         if end_of_snake not in self.snake_body:
+-            self.window.addch(end_of_snake[1], end_of_snake[0], " ")            # Erases the end of the snake
+-
+-        self.window.addch(self.snake_position[1], self.snake_position[0], self.SEGMENT_CHAR)  # Draws the snake head
++            self.window.addch(
++                end_of_snake[1], end_of_snake[0], " "
++            )  # Erases the end of the snake
++
++        self.window.addch(
++            self.snake_position[1], self.snake_position[0], self.SEGMENT_CHAR
++        )  # Draws the snake head
+ 
+         self.snake_body[0] = self.snake_position[:]
+ 
+     def check_tail_collision(self):
+         """Checks if the snake head collides with the tail, gameover if true"""
+         if self.key == self.UP_KEY and not self.did_go_back_on_self():
+-            if self.window.inch(self.snake_position[1], self.snake_position[0]) == ord(self.SEGMENT_CHAR):
++            if self.window.inch(self.snake_position[1], self.snake_position[0]) == ord(
++                self.SEGMENT_CHAR
++            ):
+                 self.game_over = True
+         elif self.key == self.LEFT_KEY and not self.did_go_back_on_self():
+-            if self.window.inch(self.snake_position[1], self.snake_position[0]) == ord(self.SEGMENT_CHAR):
++            if self.window.inch(self.snake_position[1], self.snake_position[0]) == ord(
++                self.SEGMENT_CHAR
++            ):
+                 self.game_over = True
+         elif self.key == self.DOWN_KEY and not self.did_go_back_on_self():
+-            if self.window.inch(self.snake_position[1], self.snake_position[0]) == ord(self.SEGMENT_CHAR):
++            if self.window.inch(self.snake_position[1], self.snake_position[0]) == ord(
++                self.SEGMENT_CHAR
++            ):
+                 self.game_over = True
+         elif self.key == self.RIGHT_KEY and not self.did_go_back_on_self():
+-            if self.window.inch(self.snake_position[1], self.snake_position[0]) == ord(self.SEGMENT_CHAR):
++            if self.window.inch(self.snake_position[1], self.snake_position[0]) == ord(
++                self.SEGMENT_CHAR
++            ):
+                 self.game_over = True
+ 
+     # TODO better name
+     def jump_snake_position(self):
+         """
+@@ -133,13 +146,19 @@
+         Places the snake on the opposite side if you are in the range to get stuck in the wall.
+         Thus, if the snake is moving on the boundary itself, parallel with the wall, it will be
+         moved to the other side.
+         """
+         # top wall
+-        if self.snake_position[1] == self.board_height - 1 and self.key == self.LEFT_KEY:
++        if (
++            self.snake_position[1] == self.board_height - 1
++            and self.key == self.LEFT_KEY
++        ):
+             self.snake_position[1] = 1
+-        elif self.snake_position[1] == self.board_height - 1 and self.key == self.RIGHT_KEY:
++        elif (
++            self.snake_position[1] == self.board_height - 1
++            and self.key == self.RIGHT_KEY
++        ):
+             self.snake_position[1] = 1
+ 
+         # bottom wall
+         if self.snake_position[1] == 0 and self.key == self.LEFT_KEY:
+             self.snake_position[1] = self.board_height - 2
+@@ -153,11 +172,13 @@
+             self.snake_position[0] = self.board_width - 2
+ 
+         # right wall
+         if self.snake_position[0] == self.board_width - 1 and self.key == self.UP_KEY:
+             self.snake_position[0] = 1
+-        elif self.snake_position[0] == self.board_width - 1 and self.key == self.DOWN_KEY:
++        elif (
++            self.snake_position[0] == self.board_width - 1 and self.key == self.DOWN_KEY
++        ):
+             self.snake_position[0] = 1
+ 
+     def is_game_over(self):
+         """Returns boolean for main game loop to end or continue"""
+         return self.game_over
+would reformat /home/seminarski/black/../snake/snake.py
+--- /home/seminarski/black/../snake/snake_main.py	2026-05-23 18:48:52.401540+00:00
++++ /home/seminarski/black/../snake/snake_main.py	2026-05-23 18:49:38.135740+00:00
+@@ -5,28 +5,35 @@
+ 
+ Description:  Console-based Snake clone, written in Python 3.5.1
+               using the curses module.
+ 
+ """
+-import curses                                  # For terminal control
++
++import curses  # For terminal control
+ from game import Game
+-from game_state_screens import draw_start_window, draw_game_over_window, draw_option_select_window
++from game_state_screens import (
++    draw_start_window,
++    draw_game_over_window,
++    draw_option_select_window,
++)
+ 
+-
+-curses.initscr()                                # Starts screen
+-curses.noecho()                                 # Hides the keyboard input from the terminal
++curses.initscr()  # Starts screen
++curses.noecho()  # Hides the keyboard input from the terminal
+ curses.curs_set(0)
+ 
+ 
+ def main():
+     draw_start_window()
+-    game_mode = draw_option_select_window()     # Draws the option screen and assigns the value received to game_mode
++    game_mode = (
++        draw_option_select_window()
++    )  # Draws the option screen and assigns the value received to game_mode
+     snake_game = Game(game_mode)
+ 
+     while not snake_game.is_game_over():
+         snake_game.run_game()
+ 
+     snake_game.end_window()
+     draw_game_over_window(snake_game.get_game_score())
+ 
++
+ if __name__ == "__main__":
+     main()
+would reformat /home/seminarski/black/../snake/snake_main.py
+
+Oh no! 💥 💔 💥
+5 files would be reformatted.
