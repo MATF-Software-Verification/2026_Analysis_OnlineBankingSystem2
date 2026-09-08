@@ -167,7 +167,7 @@ Jedinični testovi testiraju svaku metodu klasa `Snake` i `Board` izolovano, bez
 ### Pokretanje
 
 ```bash
-cd pytest-unit && bash run.sh
+bash pytest-unit/run.sh
 ```
 
 ### Rezultati
@@ -205,7 +205,7 @@ Integracioni testovi proveravaju interakcije između klasa, pre svega klase `Gam
 ### Pokretanje
 
 ```bash
-cd pytest-integration && bash run.sh
+bash pytest-integration/run.sh
 ```
 
 ### Rezultati
