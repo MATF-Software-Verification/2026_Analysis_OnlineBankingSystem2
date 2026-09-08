@@ -6,4 +6,4 @@ PROJECT_DIR="$SCRIPT_DIR/../snake"
 bandit -r "$PROJECT_DIR" \
     --format txt \
     --verbose \
-    2>&1 | tee -a "$SCRIPT_DIR/results.txt"
+    2>&1 | tee "$SCRIPT_DIR/results.txt"
