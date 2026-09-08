@@ -7,5 +7,5 @@ mypy "$PROJECT_DIR"/*.py \
     --ignore-missing-imports \
     --show-error-codes \
     --pretty \
-    2>&1 | tee -a "$SCRIPT_DIR/results.txt"
+    2>&1 | tee "$SCRIPT_DIR/results.txt"
 
