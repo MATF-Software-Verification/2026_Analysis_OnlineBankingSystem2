@@ -5,4 +5,4 @@ PROJECT_DIR="$SCRIPT_DIR/../snake"
 
 pylint "$PROJECT_DIR"/*.py \
     --output-format=text \
-    2>&1 | tee -a "$SCRIPT_DIR/results2.txt"
+    2>&1 | tee -a "$SCRIPT_DIR/results.txt"
