@@ -1,0 +1,130 @@
+=== radon cc (ciklicka kompleksnost, po funkciji/metodi) ===
+C:/Users/Ana/DEsktop/novi/2026_Analysis_OnlineBankingSystem2/radon/../snake/board.py
+    M 31:4 Board.update_fruit_position - A (3)
+    C 13:0 Board - A (2)
+    M 21:4 Board.__init__ - A (1)
+    M 27:4 Board.display_fruit - A (1)
+    M 48:4 Board.get_fruit_x - A (1)
+    M 51:4 Board.get_fruit_y - A (1)
+    M 54:4 Board.set_fruit_x - A (1)
+    M 57:4 Board.set_fruit_y - A (1)
+    M 60:4 Board.get_board_width - A (1)
+    M 63:4 Board.get_board_height - A (1)
+C:/Users/Ana/DEsktop/novi/2026_Analysis_OnlineBankingSystem2/radon/../snake/game.py
+    M 93:4 Game.game_over_if_wall_hit - A (5)
+    M 104:4 Game.pass_through_if_wall_hit - A (5)
+    C 15:0 Game - A (3)
+    M 61:4 Game.check_fruit_collision - A (3)
+    M 87:4 Game.increase_game_speed - A (3)
+    M 37:4 Game.run_game - A (2)
+    M 74:4 Game.set_game_over - A (2)
+    M 25:4 Game.__init__ - A (1)
+    M 83:4 Game.is_game_over - A (1)
+    M 120:4 Game.get_game_score - A (1)
+    M 124:4 Game.end_window - A (1)
+<unknown>:20: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:21: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:22: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:23: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:24: SyntaxWarning: invalid escape sequence '\_'
+C:/Users/Ana/DEsktop/novi/2026_Analysis_OnlineBankingSystem2/radon/../snake/game_state_screens.py
+    F 33:0 draw_option_select_window - A (5)
+    F 14:0 draw_start_window - A (3)
+    F 54:0 draw_game_over_window - A (3)
+C:/Users/Ana/DEsktop/novi/2026_Analysis_OnlineBankingSystem2/radon/../snake/snake.py
+    M 130:4 Snake.jump_snake_position - C (17)
+    M 41:4 Snake.move_position - C (16)
+    M 114:4 Snake.check_tail_collision - C (13)
+    M 170:4 Snake.did_go_back_on_self - B (9)
+    C 11:0 Snake - A (5)
+    M 101:4 Snake.display_snake - A (3)
+    M 30:4 Snake.__init__ - A (1)
+    M 161:4 Snake.is_game_over - A (1)
+    M 165:4 Snake.grow_snake - A (1)
+    M 191:4 Snake.move_up - A (1)
+    M 194:4 Snake.move_down - A (1)
+    M 197:4 Snake.move_left - A (1)
+    M 200:4 Snake.move_right - A (1)
+    M 203:4 Snake.get_snake_head_x - A (1)
+    M 206:4 Snake.get_snake_head_y - A (1)
+    M 209:4 Snake.set_snake_head_x - A (1)
+    M 212:4 Snake.set_snake_head_y - A (1)
+C:/Users/Ana/DEsktop/novi/2026_Analysis_OnlineBankingSystem2/radon/../snake/snake_main.py
+    F 20:0 main - A (2)
+
+42 blocks (classes, functions, methods) analyzed.
+Average complexity: A (3.0238095238095237)
+
+=== radon mi (indeks odrzivosti, po fajlu) ===
+C:/Users/Ana/DEsktop/novi/2026_Analysis_OnlineBankingSystem2/radon/../snake/board.py - A (79.66)
+C:/Users/Ana/DEsktop/novi/2026_Analysis_OnlineBankingSystem2/radon/../snake/game.py - A (65.91)
+<unknown>:20: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:21: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:22: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:23: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:24: SyntaxWarning: invalid escape sequence '\_'
+C:/Users/Ana/DEsktop/novi/2026_Analysis_OnlineBankingSystem2/radon/../snake/game_state_screens.py - A (78.97)
+C:/Users/Ana/DEsktop/novi/2026_Analysis_OnlineBankingSystem2/radon/../snake/snake.py - A (47.88)
+C:/Users/Ana/DEsktop/novi/2026_Analysis_OnlineBankingSystem2/radon/../snake/snake_main.py - A (94.47)
+
+=== radon raw (sirove metrike: LOC, SLOC, komentari) ===
+C:/Users/Ana/DEsktop/novi/2026_Analysis_OnlineBankingSystem2/radon/../snake/board.py
+    LOC: 64
+    LLOC: 37
+    SLOC: 32
+    Comments: 3
+    Single comments: 2
+    Multi: 12
+    Blank: 18
+    - Comment Stats
+        (C % L): 5%
+        (C % S): 9%
+        (C + M % L): 23%
+C:/Users/Ana/DEsktop/novi/2026_Analysis_OnlineBankingSystem2/radon/../snake/game.py
+    LOC: 126
+    LLOC: 78
+    SLOC: 69
+    Comments: 9
+    Single comments: 4
+    Multi: 28
+    Blank: 25
+    - Comment Stats
+        (C % L): 7%
+        (C % S): 13%
+        (C + M % L): 29%
+C:/Users/Ana/DEsktop/novi/2026_Analysis_OnlineBankingSystem2/radon/../snake/game_state_screens.py
+    LOC: 68
+    LLOC: 41
+    SLOC: 37
+    Comments: 0
+    Single comments: 0
+    Multi: 17
+    Blank: 14
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 25%
+C:/Users/Ana/DEsktop/novi/2026_Analysis_OnlineBankingSystem2/radon/../snake/snake.py
+    LOC: 213
+    LLOC: 145
+    SLOC: 132
+    Comments: 16
+    Single comments: 19
+    Multi: 26
+    Blank: 36
+    - Comment Stats
+        (C % L): 8%
+        (C % S): 12%
+        (C + M % L): 20%
+C:/Users/Ana/DEsktop/novi/2026_Analysis_OnlineBankingSystem2/radon/../snake/snake_main.py
+    LOC: 32
+    LLOC: 17
+    SLOC: 16
+    Comments: 4
+    Single comments: 0
+    Multi: 6
+    Blank: 10
+    - Comment Stats
+        (C % L): 12%
+        (C % S): 25%
+        (C + M % L): 31%

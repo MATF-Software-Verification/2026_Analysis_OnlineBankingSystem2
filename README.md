@@ -29,6 +29,7 @@ Komit (hash code) projekta: [a06cd390d64edcb4e9505f0c7fd5737c6128d716](https://g
 |**Pytest**|Dinamička verifikacija|Jedinični testovi za klase `Snake` i `Board` — svaka metoda se testira izolovano uz mock `curses` window objekta.|bash pytest-unit/run.sh|
 |**Pytest**|Dinamička verifikacija-|Integracioni testovi koji proveravaju interakcije između klasa `Snake`, `Board` i `Game` — kolizija sa voćem, prolaz kroz zidove, promena brzine, game over logika.|bash pytest-integration/run.sh|
 |**Vulture**|Statička verifikacija|Vulture je alat za statičku analizu Python koda koji pronalazi delove koda koji su definisani ali se nikada ne koriste — tzv. mrtvi kod (dead code).|bash vulture/run.sh|
+|**Radon**|Statička analiza (metrike)|Radon meri cikličku kompleksnost (CC) po metodi i indeks održivosti (MI) po fajlu — kvantifikuje koliko je kod komplikovan za razumevanje i održavanje.|bash radon/run.sh|
 
 ## Zaključci
 
@@ -45,3 +46,5 @@ Komit (hash code) projekta: [a06cd390d64edcb4e9505f0c7fd5737c6128d716](https://g
 6. **`random.randint` — lažno pozitivan bezbednosni nalaz:** Bandit flaguje sve pozive `random.randint` kao potencijalni bezbednosni propust, što je za kontekst igre nebitno, ali je korisno znati za projekte gde je slučajnost sigurnosno relevantna.
 
 7. **`game_state_screens.py` — invalid escape sekvence u ASCII art stringu:** Stringovi u `draw_start_window` funkciji sadrže `\` karaktere koji Python 3.12 interpretira kao nevažeće escape sekvence (SyntaxWarning), što bi moglo uzrokovati probleme u budućim verzijama Pythona.
+
+8. **Radon potvrđuje kompleksnost preko brojčane metrike:** Metode `jump_snake_position` (CC 17), `move_position` (CC 16), `check_tail_collision` (CC 13) i `did_go_back_on_self` (CC 9) u `snake.py` su jedine sa ocenom B/C, dok su sve ostale metode u projektu ocenjene A (niska kompleksnost). Ovo se poklapa sa Pylint R0912 nalazom i potvrđuje da je `snake.py` (MI 47.88) fajl sa najnižim indeksom održivosti u projektu, dok su svi ostali fajlovi iznad 65.

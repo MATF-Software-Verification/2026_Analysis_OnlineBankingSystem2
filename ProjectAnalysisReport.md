@@ -237,9 +237,68 @@ Vulture nije pronašao nekorišćene funkcije, klase niti module. Sve definisane
 
 Projekat ne sadrži mrtvi kod — sve definisane komponente se aktivno koriste. Jedini nalaz su `SyntaxWarning` upozorenja vezana za escape sekvence u ASCII art stringu, koja su već identifikovana i opisana u sekciji o Pylint analizi. Ovaj nalaz potvrđuje konzistentnost između alata.
 
+
 ---
 
-## 8. Opšti zaključci
+## 8. Radon — metrike kompleksnosti i održivosti
+
+### Opis alata
+
+Radon je alat za statičku analizu Python koda koji, za razliku od Pylint-a (koji daje stilske i
+logičke primedbe), izračunava brojčane metrike softverskog inženjerstva: cikličku kompleksnost
+(Cyclomatic Complexity, CC) po funkciji/metodi, indeks održivosti (Maintainability Index, MI) po
+fajlu, i sirove metrike (LOC/SLOC/broj komentara). CC meri broj nezavisnih putanja kroz kod
+(broj if/elif/for/while/and/or grana + 1) i ocenjuje se slovima od A (1-5, jednostavno) do
+F (>50, teško održivo). MI kombinuje CC, Halstead volumen i broj linija u ocenu 0-100 po fajlu.
+
+### Pokretanje
+
+```bash
+bash radon/run.sh
+```
+
+Skripta poziva `radon cc`, `radon mi` i `radon raw` nad svim fajlovima u `snake/` i upisuje
+rezultat u `radon/results.txt`.
+
+### Rezultati
+
+Ciklička kompleksnost — sve metode u projektu ocenjene su A (niska kompleksnost, CC 1-5),
+osim četiri metode u `snake.py`:
+
+| Metoda | CC | Ocena |
+|--------|----|----|
+| `Snake.jump_snake_position` | 17 | C |
+| `Snake.move_position` | 16 | C |
+| `Snake.check_tail_collision` | 13 | C |
+| `Snake.did_go_back_on_self` | 9 | B |
+
+Prosečna kompleksnost projekta: A (3.02) — dakle izuzetno niska u proseku, sa četiri jasna
+"hot spot-a" koja odudaraju od ostatka koda.
+
+Indeks održivosti (MI) po fajlu:
+
+| Fajl | MI | Ocena |
+|------|----|----|
+| `snake_main.py` | 94.47 | A |
+| `board.py` | 79.66 | A |
+| `game_state_screens.py` | 78.97 | A |
+| `game.py` | 65.91 | A |
+| `snake.py` | **47.88** | A (najniže u projektu) |
+
+### Zaključak
+
+Radon nezavisno potvrđuje rezultate Pylint-ovih R0912
+pravila (previše grana u `move_position`): `snake.py` je jedini fajl u projektu sa značajno
+nižim indeksom održivosti, i sadrži sve četiri metode ocenjene iznad A po cikličkoj kompleksnosti.
+Sve četiri "problematične" metode (`jump_snake_position`, `move_position`, `check_tail_collision`,
+`did_go_back_on_self`) rukuju istom stvari — grananjem po četiri moguća smera kretanja (gore/dole/
+levo/desno) — što potvrđuje raniji predlog da bi uvođenje rečnika pravaca (mapiranje tastera na
+(dx, dy) vektore) umesto ponovljenih if/elif blokova značajno smanjilo kompleksnost svih ovih
+metoda odjednom, ne samo jedne.
+
+---
+
+## 9. Opšti zaključci
 
 | # | Nalaz | Ozbiljnost | Alat |
 |---|-------|-----------|------|
@@ -252,5 +311,6 @@ Projekat ne sadrži mrtvi kod — sve definisane komponente se aktivno koriste. 
 | 7 | Stilske nekonzistentnosti — poravnati komentari, preduge linije | Informativna | Pylint |
 | 8 | `random.randint` flagovan od Bandit — lažno pozitivno za igru | Informativna | Bandit |
 | 9 | Mrtvi kod nije pronađen — sve definisane komponente se koriste | Informativna | Vulture |
+| 10 | `snake.py` ima najniži indeks održivosti (MI 47.88) i 4 metode sa povišenom cikličkom kompleksnošću (CC 9-17), sve vezane za grananje po 4 smera kretanja | Niska/Informativna | Radon |
 
 Projekat je funkcionalan i čitljiv. Ima mesta na kojima autor treba da poboljša svoj projekat — nedostatak type annotations, TODO komentari koji ukazuju na planirana poboljšanja koja nisu realizovana, i par logičkih propusta koji bi se manifestovali u značajnim slučajevima tokom igranja.
