@@ -26,7 +26,6 @@ Komit (hash code) projekta: [a06cd390d64edcb4e9505f0c7fd5737c6128d716](https://g
 | **Pylint** | Statička verifikacija | Pylint je alat za statičku analizu Python koda koji proverava stilske greške, logičke probleme i moguće bagove. | bash pylint/run.sh |
 | **Mypy** | Statička verifikacija | Mypy je alat za statičku proveru tipova u Pythonu. Projekat nema type annotations, pa mypy ne prijavljuje greške, što je i samo po sebi zaključak o nedostatku anotacija. | bash mypy/run.sh |
 |**Bandit**|Statička verifikacija|Bandit je alat za pronalazak bezbednosnih propusta u Python kodu.|bash bandit/run.sh|
-|**Black**|Statička verifikacija|Black je Python code formatter koji proverava da li kod prati standardizovano formatiranje.|bash black/run.sh|
 |**Pytest**|Dinamička verifikacija|Jedinični testovi za klase `Snake` i `Board` — svaka metoda se testira izolovano uz mock `curses` window objekta.|bash pytest-unit/run.sh|
 |**Pytest**|Dinamička verifikacija-|Integracioni testovi koji proveravaju interakcije između klasa `Snake`, `Board` i `Game` — kolizija sa voćem, prolaz kroz zidove, promena brzine, game over logika.|bash pytest-integration/run.sh|
 |**Vulture**|Statička verifikacija|Vulture je alat za statičku analizu Python koda koji pronalazi delove koda koji su definisani ali se nikada ne koriste — tzv. mrtvi kod (dead code).|bash vulture/run.sh|
