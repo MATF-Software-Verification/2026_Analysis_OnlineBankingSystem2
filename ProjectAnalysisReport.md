@@ -124,34 +124,7 @@ Svi nalazi su lažno pozitivni u kontekstu ove igre — pozicioniranje voća na 
 
 ---
 
-## 5. Black — stilska provera formatiranja
-
-### Opis alata
-
-Black je Python code formatter koji nameće konzistentno formatiranje koda. Korišćen u `--check --diff` modu koji ne menja fajlove već samo prijavljuje šta bi promenio.
-
-### Pokretanje
-
-```bash
-black --check --diff snake/*.py > black/output.txt
-```
-
-### Rezultati
-
-Black bi reformatovao svih **5 fajlova**. Najčešće promene:
-
-- Uklanjanje viška razmaka u poravnatim komentarima (npr. `# For RNG` poravnat na kolonu 37)
-- Prelom dugih linija uz Black-ov stil (operatori na početku novog reda)
-- Prelom `addch()` i `Snake()` poziva sa višestrukim argumentima na više redova
-- Uklanjanje trailing whitespace i viška praznih redova u `game_state_screens.py`
-
-### Zaključak
-
-Projekat ne prati Black-ov standard formatiranja, što je vidljivo posebno u stilu poravnavanja komentara i dugim linijama. Ovo je stilska primedba bez uticaja na funkcionalnost.
-
----
-
-## 6. Pytest — jedinični testovi
+## 5. Pytest — jedinični testovi
 
 ### Opis
 
@@ -190,7 +163,7 @@ Sve metode klasa `Snake` i `Board` koje sadrže čistu logiku su pokrivene sa 10
 
 ---
 
-## 7. Pytest — integracioni testovi
+## 6. Pytest — integracioni testovi
 
 ### Opis
 
@@ -242,7 +215,7 @@ Zbog `elif` lanca, ako zmija dospe u ugao table (npr. `x=0, y=0`), biće obrađe
 
 ---
 
-## 8. Vulture — detekcija mrtvog koda
+## 7. Vulture — detekcija mrtvog koda
 
 #### Opis alata
 
@@ -266,7 +239,7 @@ Projekat ne sadrži mrtvi kod — sve definisane komponente se aktivno koriste. 
 
 ---
 
-## 9. Opšti zaključci
+## 8. Opšti zaključci
 
 | # | Nalaz | Ozbiljnost | Alat |
 |---|-------|-----------|------|
@@ -276,7 +249,7 @@ Projekat ne sadrži mrtvi kod — sve definisane komponente se aktivno koriste. 
 | 4 | Duplirani kod u `update_fruit_position` — redundantno postavljanje koordinata | Niska | Pylint |
 | 5 | `check_tail_collision` — 4 identična bloka koja se mogu uprosti | Niska | Pylint |
 | 6 | Nedostajuće type annotations | Informativna | Mypy |
-| 7 | Stilske nekonzistentnosti — poravnati komentari, preduge linije | Informativna | Black, Pylint |
+| 7 | Stilske nekonzistentnosti — poravnati komentari, preduge linije | Informativna | Pylint |
 | 8 | `random.randint` flagovan od Bandit — lažno pozitivno za igru | Informativna | Bandit |
 | 9 | Mrtvi kod nije pronađen — sve definisane komponente se koriste | Informativna | Vulture |
 
